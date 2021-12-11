@@ -1,2 +1,2 @@
 # portfolio
-Collection of notable projects I have worked on
+Collection of notable projects that I have worked on
