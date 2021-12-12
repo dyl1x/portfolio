@@ -1,0 +1,162 @@
+\hypertarget{classSonar}{}\section{Sonar Class Reference}
+\label{classSonar}\index{Sonar@{Sonar}}
+
+
+The \hyperlink{classSonar}{Sonar} type sensor class. This class is derived from the base class \hyperlink{classRanger}{Ranger}.  
+
+
+
+
+{\ttfamily \#include $<$sonar.\+h$>$}
+
+
+
+Inheritance diagram for Sonar\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classSonar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sonar\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classSonar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSonar_a71ef009d138f1e372fc35ca0cb6e85e2}{Sonar} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSonar}{Sonar} default. \end{DoxyCompactList}\item 
+\hyperlink{classSonar_a810fa5faf9ddee8ffd09c77556efda0c}{Sonar} (\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose} pose)
+\begin{DoxyCompactList}\small\item\em Costructor which would set defaults variables except angular resolution. \end{DoxyCompactList}\item 
+\hyperlink{classSonar_ac29c8ae54d18c0ab4effbaa6fc389df4}{Sonar} (double maxr, double minr, unsigned int fov, \hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose} pose, \hyperlink{namespacesonar_a3fd8bcda99ebc0ba5ba1f926196fdf6b}{sonar\+::description} model)
+\begin{DoxyCompactList}\small\item\em Costructor which would set all the variables of the sensor. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classSonar_a33cc5f2df6cc1d96a59067be67eab781}{generate\+Data} ()
+\begin{DoxyCompactList}\small\item\em Generates raw data for the sensor. \end{DoxyCompactList}\item 
+bool \hyperlink{classSonar_a74d551d0ad61861ccf903f2535d799f0}{set\+Field\+Of\+View} (unsigned int fov)
+\begin{DoxyCompactList}\small\item\em Sets the field of view (F\+OV) of the sensor based on the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSonar_a8234f001a2348746880010b742ccecd2}\label{classSonar_a8234f001a2348746880010b742ccecd2}} 
+void \hyperlink{classSonar_a8234f001a2348746880010b742ccecd2}{set\+Scan\+Area} ()
+\begin{DoxyCompactList}\small\item\em Calculates the area that is scaned by the sensor. \end{DoxyCompactList}\item 
+double \hyperlink{classSonar_ac47b8e7936dfd5c3bde262baf301d46d}{get\+Scan\+Area} ()
+\begin{DoxyCompactList}\small\item\em Gets the area that is scaned by the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSonar}{Sonar} type sensor class. This class is derived from the base class \hyperlink{classRanger}{Ranger}. 
+
+Used for \hyperlink{classSonar}{Sonar} sensor creation 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSonar_a71ef009d138f1e372fc35ca0cb6e85e2}\label{classSonar_a71ef009d138f1e372fc35ca0cb6e85e2}} 
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{Sonar()}{Sonar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sonar\+::\+Sonar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classSonar}{Sonar} default. 
+
+max range\+: 10 min range\+: 0.\+2 fov\+: 20 position\+: 0,0,0 model\+:S\+N-\/001 \mbox{\Hypertarget{classSonar_a810fa5faf9ddee8ffd09c77556efda0c}\label{classSonar_a810fa5faf9ddee8ffd09c77556efda0c}} 
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{Sonar()}{Sonar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sonar\+::\+Sonar (\begin{DoxyParamCaption}\item[{\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose}}]{pose }\end{DoxyParamCaption})}
+
+
+
+Costructor which would set defaults variables except angular resolution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pose} & position \{x,y,theta\} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSonar_ac29c8ae54d18c0ab4effbaa6fc389df4}\label{classSonar_ac29c8ae54d18c0ab4effbaa6fc389df4}} 
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\index{Sonar@{Sonar}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{Sonar()}{Sonar()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sonar\+::\+Sonar (\begin{DoxyParamCaption}\item[{double}]{maxr,  }\item[{double}]{minr,  }\item[{unsigned int}]{fov,  }\item[{\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose}}]{pose,  }\item[{\hyperlink{namespacesonar_a3fd8bcda99ebc0ba5ba1f926196fdf6b}{sonar\+::description}}]{model }\end{DoxyParamCaption})}
+
+
+
+Costructor which would set all the variables of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maximum} & range \\
+\hline
+{\em minimum} & range \\
+\hline
+{\em angular} & resolution \\
+\hline
+{\em F\+OV} & -\/ angle \mbox{[}deg\mbox{]} \\
+\hline
+{\em position} & x \mbox{[}m\mbox{]}, y \mbox{[}m\mbox{]}, angle \mbox{[}radians\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSonar_a33cc5f2df6cc1d96a59067be67eab781}\label{classSonar_a33cc5f2df6cc1d96a59067be67eab781}} 
+\index{Sonar@{Sonar}!generate\+Data@{generate\+Data}}
+\index{generate\+Data@{generate\+Data}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{generate\+Data()}{generateData()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Sonar\+::generate\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Generates raw data for the sensor. 
+
+\begin{DoxyReturn}{Returns}
+vector containing senor data
+\end{DoxyReturn}
+Data from the sensor is just 1 distance measurement. 
+
+Implements \hyperlink{classRanger_a1ac4a84f251b0793fc262643080f084a}{Ranger}.
+
+\mbox{\Hypertarget{classSonar_ac47b8e7936dfd5c3bde262baf301d46d}\label{classSonar_ac47b8e7936dfd5c3bde262baf301d46d}} 
+\index{Sonar@{Sonar}!get\+Scan\+Area@{get\+Scan\+Area}}
+\index{get\+Scan\+Area@{get\+Scan\+Area}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{get\+Scan\+Area()}{getScanArea()}}
+{\footnotesize\ttfamily double Sonar\+::get\+Scan\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the area that is scaned by the sensor. 
+
+Calculates the area scanned by the sonar as a circle sector (pizza slice). \mbox{\Hypertarget{classSonar_a74d551d0ad61861ccf903f2535d799f0}\label{classSonar_a74d551d0ad61861ccf903f2535d799f0}} 
+\index{Sonar@{Sonar}!set\+Field\+Of\+View@{set\+Field\+Of\+View}}
+\index{set\+Field\+Of\+View@{set\+Field\+Of\+View}!Sonar@{Sonar}}
+\subsubsection{\texorpdfstring{set\+Field\+Of\+View()}{setFieldOfView()}}
+{\footnotesize\ttfamily bool Sonar\+::set\+Field\+Of\+View (\begin{DoxyParamCaption}\item[{unsigned int}]{fov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the field of view (F\+OV) of the sensor based on the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\+OV} & value \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if actioned, false otherwise
+\end{DoxyReturn}
+F\+OV would be a value between 0 and 360 degrees for the command to be actioned if supported (only 20 is supported by S\+N-\/001) 
+
+Reimplemented from \hyperlink{classRanger_afb5d392ca450bcce295e61c121d09157}{Ranger}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sonar.\+h\item 
+sonar.\+cpp\end{DoxyCompactItemize}

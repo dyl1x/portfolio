@@ -1,0 +1,17 @@
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/edit_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/cell.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/ranger.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/a2_skeleton_ex.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/rangerfusion.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/geometry.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/edit_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/mock_lib.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/fusionSonar.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/student_lib.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/fusionTests.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/rawTests.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/CMakeFiles/fusionLaser.dir

@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -std=c++11  -rdynamic CMakeFiles/sonarTests.dir/test_sonar.cpp.o  -o sonarTests /usr/src/gtest/libgtest.a -lpthread libmock_lib.a 

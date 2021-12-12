@@ -1,0 +1,140 @@
+\hypertarget{classAdvPathFinder}{}\section{Adv\+Path\+Finder Class Reference}
+\label{classAdvPathFinder}\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+
+
+Inheritance diagram for Adv\+Path\+Finder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classAdvPathFinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adv\+Path\+Finder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classAdvPathFinder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAdvPathFinder_a005828035fc0746ca24122f1a1757296}{Adv\+Path\+Finder} (double maxV, double maxG, double minV)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAdvPathFinder}{Adv\+Path\+Finder}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvPathFinder_adbaf47458b5fed9388f0ef39c4036d12}\label{classAdvPathFinder_adbaf47458b5fed9388f0ef39c4036d12}} 
+\hyperlink{classAdvPathFinder_adbaf47458b5fed9388f0ef39c4036d12}{$\sim$\+Adv\+Path\+Finder} ()
+\begin{DoxyCompactList}\small\item\em Adv\+Pathfinder Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAdvPathFinder_a0bb7bde4744fa269a172a1d57018462b}{update} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$ rbs\+Bogie, geometry\+\_\+msgs\+::\+Pose loc, std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Velocity\+Stamped $>$ rvs\+Bogie)
+\begin{DoxyCompactList}\small\item\em update \end{DoxyCompactList}\item 
+std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classAdvPathFinder_a4abff5170d4b63a4fa98262d90e14f32}{get\+Path} ()
+\begin{DoxyCompactList}\small\item\em getpath \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAdvPathFinder_a19f90eb8b0322c8cab8c7c94d9da45fa}{add\+Nodes} ()
+\begin{DoxyCompactList}\small\item\em add\+Nodes \end{DoxyCompactList}\item 
+double \hyperlink{classAdvPathFinder_ae213e34f7092c587d40afd8f316c31eb}{get\+Weight} (double range, double bearing)
+\begin{DoxyCompactList}\small\item\em get\+Weight \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAdvPathFinder_a005828035fc0746ca24122f1a1757296}\label{classAdvPathFinder_a005828035fc0746ca24122f1a1757296}} 
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\subsubsection{\texorpdfstring{Adv\+Path\+Finder()}{AdvPathFinder()}}
+{\footnotesize\ttfamily Adv\+Path\+Finder\+::\+Adv\+Path\+Finder (\begin{DoxyParamCaption}\item[{double}]{maxV,  }\item[{double}]{maxG,  }\item[{double}]{minV }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classAdvPathFinder}{Adv\+Path\+Finder}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxV} & -\/ max velocity \\
+\hline
+{\em maxG} & -\/ max G force \\
+\hline
+{\em minV} & -\/ min velocity\\
+\hline
+\end{DoxyParams}
+Creates an object that does path planning for basic mode 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAdvPathFinder_a19f90eb8b0322c8cab8c7c94d9da45fa}\label{classAdvPathFinder_a19f90eb8b0322c8cab8c7c94d9da45fa}} 
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!add\+Nodes@{add\+Nodes}}
+\index{add\+Nodes@{add\+Nodes}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\subsubsection{\texorpdfstring{add\+Nodes()}{addNodes()}}
+{\footnotesize\ttfamily void Adv\+Path\+Finder\+::add\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+add\+Nodes 
+
+adds nodes to the matrix, doesnt update the path. \mbox{\Hypertarget{classAdvPathFinder_a4abff5170d4b63a4fa98262d90e14f32}\label{classAdvPathFinder_a4abff5170d4b63a4fa98262d90e14f32}} 
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ Adv\+Path\+Finder\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getpath 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Uses T\+SP algorithm to calculate the \char`\"{}best\char`\"{} order to navigate the points, visiting each point at least once. Brute force mehtod from geeks for geeks. Modified to use vectors and doesnt add the return distance. https\+://www.\+geeksforgeeks.\+org/traveling-\/salesman-\/problem-\/tsp-\/implementation/$>$geeksforgeeks
+
+Implements \hyperlink{classPathFinderBase_aa254c2b8392f028898f691920341caa0}{Path\+Finder\+Base}.
+
+\mbox{\Hypertarget{classAdvPathFinder_ae213e34f7092c587d40afd8f316c31eb}\label{classAdvPathFinder_ae213e34f7092c587d40afd8f316c31eb}} 
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!get\+Weight@{get\+Weight}}
+\index{get\+Weight@{get\+Weight}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Weight()}{getWeight()}}
+{\footnotesize\ttfamily double Adv\+Path\+Finder\+::get\+Weight (\begin{DoxyParamCaption}\item[{double}]{range,  }\item[{double}]{bearing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+get\+Weight 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & from point a to b \\
+\hline
+{\em bearing} & of point b from a \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+edge weight
+\end{DoxyReturn}
+uses the turn angle and the estimated travelling distance to calculate a weight, which is the total time taken to reach the given coordinates from current position \mbox{\Hypertarget{classAdvPathFinder_a0bb7bde4744fa269a172a1d57018462b}\label{classAdvPathFinder_a0bb7bde4744fa269a172a1d57018462b}} 
+\index{Adv\+Path\+Finder@{Adv\+Path\+Finder}!update@{update}}
+\index{update@{update}!Adv\+Path\+Finder@{Adv\+Path\+Finder}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Adv\+Path\+Finder\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$}]{rbs\+Bogie,  }\item[{geometry\+\_\+msgs\+::\+Pose}]{loc,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Velocity\+Stamped $>$}]{rvs\+Bogie }\end{DoxyParamCaption})}
+
+
+
+update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rbs\+Bogie} & -\/ bogie data from friendly radar \\
+\hline
+{\em loc} & -\/ friendly location \\
+\hline
+{\em rvs\+Bogie} & -\/ range velocity of bogie from base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+intended overload
+\end{DoxyNote}
+updates the input variables of the class, this is to prevent from having to make a new object for calculation. Also resets calculation variable in preperation for a new calculation cycle 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{advpathfinder_8h}{advpathfinder.\+h}\item 
+advpathfinder.\+cpp\end{DoxyCompactItemize}

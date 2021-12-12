@@ -1,0 +1,158 @@
+\hypertarget{classPathFinderBase}{}\section{Path\+Finder\+Base Class Reference}
+\label{classPathFinderBase}\index{Path\+Finder\+Base@{Path\+Finder\+Base}}
+
+
+Inheritance diagram for Path\+Finder\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classPathFinderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Finder\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classPathFinderBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPathFinderBase_ae30b59d707c325d7103df2ae4e4216ef}\label{classPathFinderBase_ae30b59d707c325d7103df2ae4e4216ef}} 
+{\bfseries Path\+Finder\+Base} (double maxV, double maxG, double minV)
+\item 
+virtual void \hyperlink{classPathFinderBase_a7ab8a19a0247b66e5636e29194e5fadd}{update} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$ rbs\+Bogie, geometry\+\_\+msgs\+::\+Pose loc)
+\begin{DoxyCompactList}\small\item\em update \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classPathFinderBase_aa254c2b8392f028898f691920341caa0}{get\+Path} ()=0
+\begin{DoxyCompactList}\small\item\em get\+Path \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPathFinderBase_a2091af56120dbf598b826e10f0d54fac}{set2\+Global} ()
+\begin{DoxyCompactList}\small\item\em set2\+Global \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classPathFinderBase_a1161854780f0ca7860878bf3288a4d7d}{max\+V\+\_\+}
+\item 
+double \hyperlink{classPathFinderBase_ab091d8e0e0395d7ee4f4b139e62145d8}{max\+G\+\_\+}
+\item 
+double \hyperlink{classPathFinderBase_a4813a6420de8c46980fd97d35f75634c}{min\+V\+\_\+}
+\item 
+std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classPathFinderBase_aa93e42466b581a5455c82ac9da44dc70}{nodes\+\_\+}
+\item 
+std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$ \hyperlink{classPathFinderBase_a21b832ada9734a1edc08c990f69ac9d9}{rbs\+Bogie\+\_\+}
+\item 
+geometry\+\_\+msgs\+::\+Pose \hyperlink{classPathFinderBase_a9d62a43efa54ce2bb88b43e3dd40ecdc}{loc\+\_\+}
+\item 
+matrix \hyperlink{classPathFinderBase_a6f609273f6727b1948cb72461fd78654}{node\+Dist\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPathFinderBase_aa254c2b8392f028898f691920341caa0}\label{classPathFinderBase_aa254c2b8392f028898f691920341caa0}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$geometry\+\_\+msgs\+::\+Point$>$ Path\+Finder\+Base\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Path 
+
+Do something and find the order of interception and produce the waypoint for each interception. \begin{DoxyReturn}{Returns}
+vector of points in the global frame arranged in ascending order with the closes one is first. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classPathFinderInterface_adb55c9eab1ef3c4c1374c9d4313631de}{Path\+Finder\+Interface}.
+
+
+
+Implemented in \hyperlink{classAdvPathFinder_a4abff5170d4b63a4fa98262d90e14f32}{Adv\+Path\+Finder}, and \hyperlink{classBscPathFinder_abbcde7b0e482fdc4f3fb1428c88bccb5}{Bsc\+Path\+Finder}.
+
+\mbox{\Hypertarget{classPathFinderBase_a2091af56120dbf598b826e10f0d54fac}\label{classPathFinderBase_a2091af56120dbf598b826e10f0d54fac}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!set2\+Global@{set2\+Global}}
+\index{set2\+Global@{set2\+Global}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{set2\+Global()}{set2Global()}}
+{\footnotesize\ttfamily void Path\+Finder\+Base\+::set2\+Global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set2\+Global 
+
+converts the bogies data to find their position in the global frame. Then store it in \hyperlink{classPathFinderBase_aa93e42466b581a5455c82ac9da44dc70}{nodes\+\_\+} to be used for path planning. Position 0 of \hyperlink{classPathFinderBase_aa93e42466b581a5455c82ac9da44dc70}{nodes\+\_\+} will always have the current known location of friendly. Uses tf2 functions. \mbox{\Hypertarget{classPathFinderBase_a7ab8a19a0247b66e5636e29194e5fadd}\label{classPathFinderBase_a7ab8a19a0247b66e5636e29194e5fadd}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!update@{update}}
+\index{update@{update}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Path\+Finder\+Base\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$}]{rbs\+Bogie,  }\item[{geometry\+\_\+msgs\+::\+Pose}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rbs\+Bogie} & -\/ bogie data from friendly radar \\
+\hline
+{\em loc} & -\/ friendly location\\
+\hline
+\end{DoxyParams}
+updates the input variables of the class, this is to prevent from having to make a new object for calculation. Also resets calculation variable in preperation for a new calculation cycle 
+
+Implements \hyperlink{classPathFinderInterface_a8a2011052fb64cab85a66a21092416f2}{Path\+Finder\+Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPathFinderBase_a9d62a43efa54ce2bb88b43e3dd40ecdc}\label{classPathFinderBase_a9d62a43efa54ce2bb88b43e3dd40ecdc}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!loc\+\_\+@{loc\+\_\+}}
+\index{loc\+\_\+@{loc\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{loc\+\_\+}{loc\_}}
+{\footnotesize\ttfamily geometry\+\_\+msgs\+::\+Pose Path\+Finder\+Base\+::loc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Friendly position \mbox{\Hypertarget{classPathFinderBase_ab091d8e0e0395d7ee4f4b139e62145d8}\label{classPathFinderBase_ab091d8e0e0395d7ee4f4b139e62145d8}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!max\+G\+\_\+@{max\+G\+\_\+}}
+\index{max\+G\+\_\+@{max\+G\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{max\+G\+\_\+}{maxG\_}}
+{\footnotesize\ttfamily double Path\+Finder\+Base\+::max\+G\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Max G force \mbox{\Hypertarget{classPathFinderBase_a1161854780f0ca7860878bf3288a4d7d}\label{classPathFinderBase_a1161854780f0ca7860878bf3288a4d7d}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!max\+V\+\_\+@{max\+V\+\_\+}}
+\index{max\+V\+\_\+@{max\+V\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{max\+V\+\_\+}{maxV\_}}
+{\footnotesize\ttfamily double Path\+Finder\+Base\+::max\+V\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Max linear velocity \mbox{\Hypertarget{classPathFinderBase_a4813a6420de8c46980fd97d35f75634c}\label{classPathFinderBase_a4813a6420de8c46980fd97d35f75634c}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!min\+V\+\_\+@{min\+V\+\_\+}}
+\index{min\+V\+\_\+@{min\+V\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{min\+V\+\_\+}{minV\_}}
+{\footnotesize\ttfamily double Path\+Finder\+Base\+::min\+V\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Min linear velocity \mbox{\Hypertarget{classPathFinderBase_a6f609273f6727b1948cb72461fd78654}\label{classPathFinderBase_a6f609273f6727b1948cb72461fd78654}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!node\+Dist\+\_\+@{node\+Dist\+\_\+}}
+\index{node\+Dist\+\_\+@{node\+Dist\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{node\+Dist\+\_\+}{nodeDist\_}}
+{\footnotesize\ttfamily matrix Path\+Finder\+Base\+::node\+Dist\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+matrix of the weights to bogie positions \mbox{\Hypertarget{classPathFinderBase_aa93e42466b581a5455c82ac9da44dc70}\label{classPathFinderBase_aa93e42466b581a5455c82ac9da44dc70}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!nodes\+\_\+@{nodes\+\_\+}}
+\index{nodes\+\_\+@{nodes\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{nodes\+\_\+}{nodes\_}}
+{\footnotesize\ttfamily std\+::vector$<$geometry\+\_\+msgs\+::\+Point$>$ Path\+Finder\+Base\+::nodes\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+bogie positions in the global frame \mbox{\Hypertarget{classPathFinderBase_a21b832ada9734a1edc08c990f69ac9d9}\label{classPathFinderBase_a21b832ada9734a1edc08c990f69ac9d9}} 
+\index{Path\+Finder\+Base@{Path\+Finder\+Base}!rbs\+Bogie\+\_\+@{rbs\+Bogie\+\_\+}}
+\index{rbs\+Bogie\+\_\+@{rbs\+Bogie\+\_\+}!Path\+Finder\+Base@{Path\+Finder\+Base}}
+\subsubsection{\texorpdfstring{rbs\+Bogie\+\_\+}{rbsBogie\_}}
+{\footnotesize\ttfamily std\+::vector$<$geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped$>$ Path\+Finder\+Base\+::rbs\+Bogie\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+bogie positions in the local frame 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pathfinderbase_8h}{pathfinderbase.\+h}\item 
+pathfinderbase.\+cpp\end{DoxyCompactItemize}

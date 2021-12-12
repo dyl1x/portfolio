@@ -1,0 +1,312 @@
+\hypertarget{tf2_8h}{}\section{tf2.\+h File Reference}
+\label{tf2_8h}\index{tf2.\+h@{tf2.\+h}}
+
+
+Collection of transforms between structures defined under types namespace.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tf.\+h\char`\"{}}\newline
+Include dependency graph for tf2.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{tf2_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tf2_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Point {\bfseries tf2\+::local2\+Global} (Range\+Bearing\+Stamped range\+Bearing, Pose local\+Frame)
+\begin{DoxyCompactList}\small\item\em local2\+Global \end{DoxyCompactList}\item 
+Range\+Bearing\+Stamped {\bfseries tf2\+::global2local} (Point bogie, Pose local\+Frame)
+\begin{DoxyCompactList}\small\item\em global2local \end{DoxyCompactList}\item 
+Point {\bfseries tf2\+::sperical2rectangular} (double range, double bearing)
+\begin{DoxyCompactList}\small\item\em sperical2rectangular \end{DoxyCompactList}\item 
+Range\+Bearing\+Stamped {\bfseries tf2\+::rectangular2sperical} (double x, double y)
+\begin{DoxyCompactList}\small\item\em rectangular2sperical \end{DoxyCompactList}\item 
+double {\bfseries tf2\+::get\+Range} (geometry\+\_\+msgs\+::\+Point a, geometry\+\_\+msgs\+::\+Point b)
+\begin{DoxyCompactList}\small\item\em get\+Range \end{DoxyCompactList}\item 
+double {\bfseries tf2\+::get\+Bearing} (geometry\+\_\+msgs\+::\+Point a, geometry\+\_\+msgs\+::\+Point b)
+\begin{DoxyCompactList}\small\item\em get\+Bearing \end{DoxyCompactList}\item 
+Point {\bfseries tf2\+::add\+Vector} (Point current\+Goal, Point old, double bogieV, double time)
+\begin{DoxyCompactList}\small\item\em add\+Vector -\/ add the velocity correction \end{DoxyCompactList}\item 
+std\+::vector$<$ Range\+Velocity\+Stamped $>$ {\bfseries tf2\+::arrange\+Velocity} (std\+::vector$<$ Range\+Bearing\+Stamped $>$ rbs, std\+::vector$<$ Range\+Velocity\+Stamped $>$ rvs, Pose loc)
+\begin{DoxyCompactList}\small\item\em arrange\+Velocity \end{DoxyCompactList}\item 
+std\+::vector$<$ Point $>$ {\bfseries tf2\+::arrange\+Points} (std\+::vector$<$ Point $>$ n\+Points, std\+::vector$<$ Point $>$ o\+Points, Pose loc)
+\begin{DoxyCompactList}\small\item\em arrange\+Points \end{DoxyCompactList}\item 
+double {\bfseries tf2\+::normalise\+Angle} (double theta)
+\begin{DoxyCompactList}\small\item\em normalise\+Angle \end{DoxyCompactList}\item 
+double {\bfseries tf2\+::normalise180\+Angle} (double theta)
+\begin{DoxyCompactList}\small\item\em normalise180\+Angle \end{DoxyCompactList}\item 
+double {\bfseries tf2\+::reversalize} (double angle)
+\begin{DoxyCompactList}\small\item\em reversalize \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of transforms between structures defined under types namespace. 
+
+\begin{DoxyAuthor}{Author}
+Chamath Edirisinhege 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/10-\/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000009}{Bug}]none reported as of 07-\/10-\/2021 \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tf2_8cpp_file_ad691eda6e2ddee290741747e714511ff}\label{tf2_8cpp_file_ad691eda6e2ddee290741747e714511ff}} 
+\index{tf2.\+h@{tf2.\+h}!add\+Vector@{add\+Vector}}
+\index{add\+Vector@{add\+Vector}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{add\+Vector()}{addVector()}}
+{\footnotesize\ttfamily Point tf2\+::add\+Vector (\begin{DoxyParamCaption}\item[{Point}]{current\+Goal,  }\item[{Point}]{old,  }\item[{double}]{bogieV,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+add\+Vector -\/ add the velocity correction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Goal} & -\/ known bogie location \\
+\hline
+{\em old} & -\/ previous known position \\
+\hline
+{\em bogieV} & -\/ velocity of the bogie \\
+\hline
+{\em time} & -\/ weight/ time taken to visit bogies current position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+predicted visiting point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_abd1da20dcd0ba3e657cd7209dcfcc257}\label{tf2_8cpp_file_abd1da20dcd0ba3e657cd7209dcfcc257}} 
+\index{tf2.\+h@{tf2.\+h}!arrange\+Points@{arrange\+Points}}
+\index{arrange\+Points@{arrange\+Points}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{arrange\+Points()}{arrangePoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ Point $>$ tf2\+::arrange\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Point $>$}]{n\+Points,  }\item[{std\+::vector$<$ Point $>$}]{o\+Points,  }\item[{Pose}]{loc }\end{DoxyParamCaption})}
+
+
+
+arrange\+Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Points} & -\/ new points \\
+\hline
+{\em o\+Points} & -\/ old points \\
+\hline
+{\em loc} & -\/ pose friendly\\
+\hline
+\end{DoxyParams}
+arrange the points in o\+Points to closest matching order to n\+Points based on the Range from the point to position of loc. Using the bearing to compare causes many issues when friendly is turning. \begin{DoxyReturn}{Returns}
+points arranged in order 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_abef01bcf84e2031581b4e57a59102d73}\label{tf2_8cpp_file_abef01bcf84e2031581b4e57a59102d73}} 
+\index{tf2.\+h@{tf2.\+h}!arrange\+Velocity@{arrange\+Velocity}}
+\index{arrange\+Velocity@{arrange\+Velocity}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{arrange\+Velocity()}{arrangeVelocity()}}
+{\footnotesize\ttfamily std\+::vector$<$ Range\+Velocity\+Stamped $>$ tf2\+::arrange\+Velocity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Range\+Bearing\+Stamped $>$}]{rbs,  }\item[{std\+::vector$<$ Range\+Velocity\+Stamped $>$}]{rvs,  }\item[{Pose}]{loc }\end{DoxyParamCaption})}
+
+
+
+arrange\+Velocity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rbs} & -\/ vector of range bearing stamped local frame \\
+\hline
+{\em rvs} & -\/ vector of range bearing stamped global frame \\
+\hline
+{\em loc} & -\/ pose local frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Range\+Velocity\+Stamped in order matched to range bearing stamped input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a3f53d3b1b6c428926c1f2963756a5941}\label{tf2_8cpp_file_a3f53d3b1b6c428926c1f2963756a5941}} 
+\index{tf2.\+h@{tf2.\+h}!get\+Bearing@{get\+Bearing}}
+\index{get\+Bearing@{get\+Bearing}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{get\+Bearing()}{getBearing()}}
+{\footnotesize\ttfamily double tf2\+::get\+Bearing (\begin{DoxyParamCaption}\item[{geometry\+\_\+msgs\+::\+Point}]{a,  }\item[{geometry\+\_\+msgs\+::\+Point}]{b }\end{DoxyParamCaption})}
+
+
+
+get\+Bearing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ point 1 \\
+\hline
+{\em b} & -\/ point 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bearing of point b from point a, starting from x axis of point a. returns both positive and negative angles. C\+CW turn is positive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a727763a8f4fbd7c7fa2d1cd9e2d40247}\label{tf2_8cpp_file_a727763a8f4fbd7c7fa2d1cd9e2d40247}} 
+\index{tf2.\+h@{tf2.\+h}!get\+Range@{get\+Range}}
+\index{get\+Range@{get\+Range}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{get\+Range()}{getRange()}}
+{\footnotesize\ttfamily double tf2\+::get\+Range (\begin{DoxyParamCaption}\item[{geometry\+\_\+msgs\+::\+Point}]{a,  }\item[{geometry\+\_\+msgs\+::\+Point}]{b }\end{DoxyParamCaption})}
+
+
+
+get\+Range 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ point 1 \\
+\hline
+{\em b} & -\/ point 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance from a to b. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a47530bb1728f8214d840f292e7882150}\label{tf2_8cpp_file_a47530bb1728f8214d840f292e7882150}} 
+\index{tf2.\+h@{tf2.\+h}!global2local@{global2local}}
+\index{global2local@{global2local}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{global2local()}{global2local()}}
+{\footnotesize\ttfamily Range\+Bearing\+Stamped tf2\+::global2local (\begin{DoxyParamCaption}\item[{Point}]{bogie,  }\item[{Pose}]{local\+Frame }\end{DoxyParamCaption})}
+
+
+
+global2local 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bogie} & -\/ Rectangular coordinates of a point in the global frame \\
+\hline
+{\em local\+Frame} & -\/ pose of the local frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+spherical coordinates of the point in the local frame. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a85ed73c2620bde9fbbac0a7bbf7f5414}\label{tf2_8cpp_file_a85ed73c2620bde9fbbac0a7bbf7f5414}} 
+\index{tf2.\+h@{tf2.\+h}!local2\+Global@{local2\+Global}}
+\index{local2\+Global@{local2\+Global}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{local2\+Global()}{local2Global()}}
+{\footnotesize\ttfamily Point tf2\+::local2\+Global (\begin{DoxyParamCaption}\item[{Range\+Bearing\+Stamped}]{range\+Bearing,  }\item[{Pose}]{local\+Frame }\end{DoxyParamCaption})}
+
+
+
+local2\+Global 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range\+Bearing} & -\/ spherical coordinates w.\+r.\+t. local frame \\
+\hline
+{\em local\+Frame} & -\/ pose of the local frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point (x,y) in the global frame, of the spherical coordinates (range, beaering) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a0490c02f9dc819710a4b230139729ace}\label{tf2_8cpp_file_a0490c02f9dc819710a4b230139729ace}} 
+\index{tf2.\+h@{tf2.\+h}!normalise180\+Angle@{normalise180\+Angle}}
+\index{normalise180\+Angle@{normalise180\+Angle}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{normalise180\+Angle()}{normalise180Angle()}}
+{\footnotesize\ttfamily double tf2\+::normalise180\+Angle (\begin{DoxyParamCaption}\item[{double}]{theta }\end{DoxyParamCaption})}
+
+
+
+normalise180\+Angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a25507ca4f63e9a28440f06a5913c9fa4}\label{tf2_8cpp_file_a25507ca4f63e9a28440f06a5913c9fa4}} 
+\index{tf2.\+h@{tf2.\+h}!normalise\+Angle@{normalise\+Angle}}
+\index{normalise\+Angle@{normalise\+Angle}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{normalise\+Angle()}{normaliseAngle()}}
+{\footnotesize\ttfamily double tf2\+::normalise\+Angle (\begin{DoxyParamCaption}\item[{double}]{theta }\end{DoxyParamCaption})}
+
+
+
+normalise\+Angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+theta if measured from the x-\/axis, anticlockwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_ae076814801b7296fb941f0f71242f65c}\label{tf2_8cpp_file_ae076814801b7296fb941f0f71242f65c}} 
+\index{tf2.\+h@{tf2.\+h}!rectangular2sperical@{rectangular2sperical}}
+\index{rectangular2sperical@{rectangular2sperical}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{rectangular2sperical()}{rectangular2sperical()}}
+{\footnotesize\ttfamily Range\+Bearing\+Stamped tf2\+::rectangular2sperical (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+rectangular2sperical 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point (range,bearing, 0) spherical coordinates. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a8a559cb59531c635da933150fea5abc1}\label{tf2_8cpp_file_a8a559cb59531c635da933150fea5abc1}} 
+\index{tf2.\+h@{tf2.\+h}!reversalize@{reversalize}}
+\index{reversalize@{reversalize}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{reversalize()}{reversalize()}}
+{\footnotesize\ttfamily double tf2\+::reversalize (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})}
+
+
+
+reversalize 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+undo what normalize\+Angle does 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tf2_8cpp_file_a557c75b6681b8f971a76c69252fae4ef}\label{tf2_8cpp_file_a557c75b6681b8f971a76c69252fae4ef}} 
+\index{tf2.\+h@{tf2.\+h}!sperical2rectangular@{sperical2rectangular}}
+\index{sperical2rectangular@{sperical2rectangular}!tf2.\+h@{tf2.\+h}}
+\subsubsection{\texorpdfstring{sperical2rectangular()}{sperical2rectangular()}}
+{\footnotesize\ttfamily Point tf2\+::sperical2rectangular (\begin{DoxyParamCaption}\item[{double}]{range,  }\item[{double}]{bearing }\end{DoxyParamCaption})}
+
+
+
+sperical2rectangular 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & \\
+\hline
+{\em bearing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point (x,y) rectangular coordinates 
+\end{DoxyReturn}

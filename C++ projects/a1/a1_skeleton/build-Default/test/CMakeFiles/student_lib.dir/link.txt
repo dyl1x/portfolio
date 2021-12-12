@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstudent_lib.a  CMakeFiles/student_lib.dir/__/cell.cpp.o CMakeFiles/student_lib.dir/__/circle.cpp.o CMakeFiles/student_lib.dir/__/laser.cpp.o CMakeFiles/student_lib.dir/__/line.cpp.o CMakeFiles/student_lib.dir/__/processing.cpp.o CMakeFiles/student_lib.dir/__/ranger.cpp.o CMakeFiles/student_lib.dir/__/rangerfusion.cpp.o CMakeFiles/student_lib.dir/__/sonar.cpp.o
+/usr/bin/ranlib libstudent_lib.a

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/circle.cpp
+circle.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/circle.h
+cmath
+-
+iostream
+-
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/circle.h
+line.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.h
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.cpp
+line.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.h
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.h
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/processing.cpp
+processing.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/processing.h
+limits
+-
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/processing.h
+line.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.h
+cmath
+-
+memory
+-
+complex
+-
+

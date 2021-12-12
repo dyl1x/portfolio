@@ -1,0 +1,173 @@
+\hypertarget{classLaser}{}\section{Laser Class Reference}
+\label{classLaser}\index{Laser@{Laser}}
+
+
+The \hyperlink{classLaser}{Laser} type sensor class This class is derived from the base class \hyperlink{classRanger}{Ranger}.  
+
+
+
+
+{\ttfamily \#include $<$laser.\+h$>$}
+
+
+
+Inheritance diagram for Laser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classLaser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Laser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classLaser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLaser_a68465e89283dffcc29a37e94693c6f87}{Laser} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLaser}{Laser} default. \end{DoxyCompactList}\item 
+\hyperlink{classLaser_abb99761eebf2ed73ab2fe3333c69dcdf}{Laser} (\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose} pose)
+\begin{DoxyCompactList}\small\item\em Costructor which would set defaults variables except position. \end{DoxyCompactList}\item 
+\hyperlink{classLaser_a59ac47c673627b4af3fe3cc482545e1e}{Laser} (double maxr, double minr, unsigned int a\+Res, unsigned int fov, \hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose} pose, \hyperlink{namespacelaser_a986280215cdbdd42579d301afef1d22a}{laser\+::description} model)
+\begin{DoxyCompactList}\small\item\em Costructor which would set all the variables of the sensor. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classLaser_af2d93a5e123f3b637be6d3383019562b}{generate\+Data} ()
+\begin{DoxyCompactList}\small\item\em Generates raw data for the sensor. \end{DoxyCompactList}\item 
+bool \hyperlink{classLaser_a518ac84d4631b1550330d664e161ca0a}{set\+Angular\+Resolution} (unsigned int resolution)
+\begin{DoxyCompactList}\small\item\em Sets the agular resolution of the sensor based on the model. \end{DoxyCompactList}\item 
+bool \hyperlink{classLaser_a5f140784aae7e82c2aa0f690548d6ebb}{set\+Field\+Of\+View} (unsigned int fov)
+\begin{DoxyCompactList}\small\item\em Sets the field of view (F\+OV) of the sensor based on the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classLaser}{Laser} type sensor class This class is derived from the base class \hyperlink{classRanger}{Ranger}. 
+
+Used for \hyperlink{classLaser}{Laser} sensor creation. \hyperlink{classLaser}{Laser} returns Nl, number of measurements, distances, which are related to the specified angular resolution. Each measurements in a single point in space. The laser scans anticlockwise. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLaser_a68465e89283dffcc29a37e94693c6f87}\label{classLaser_a68465e89283dffcc29a37e94693c6f87}} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{Laser()}{Laser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classLaser}{Laser} default. 
+
+max range\+: 8 min range\+: 0.\+2 angular resolution\+: 10 fov\+: 180 position\+: 0,0,0 model\+:S\+I\+C\+K-\/\+XL \mbox{\Hypertarget{classLaser_abb99761eebf2ed73ab2fe3333c69dcdf}\label{classLaser_abb99761eebf2ed73ab2fe3333c69dcdf}} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{Laser()}{Laser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose}}]{pose }\end{DoxyParamCaption})}
+
+
+
+Costructor which would set defaults variables except position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pose} & position \{x,y,theta\} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLaser_a59ac47c673627b4af3fe3cc482545e1e}\label{classLaser_a59ac47c673627b4af3fe3cc482545e1e}} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{Laser()}{Laser()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{double}]{maxr,  }\item[{double}]{minr,  }\item[{unsigned int}]{a\+Res,  }\item[{unsigned int}]{fov,  }\item[{\hyperlink{structranger_1_1SensorPose}{ranger\+::\+Sensor\+Pose}}]{pose,  }\item[{\hyperlink{namespacelaser_a986280215cdbdd42579d301afef1d22a}{laser\+::description}}]{model }\end{DoxyParamCaption})}
+
+
+
+Costructor which would set all the variables of the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maximum} & range \\
+\hline
+{\em minimum} & range \\
+\hline
+{\em angular} & resolution \\
+\hline
+{\em F\+OV} & -\/ angle \mbox{[}deg\mbox{]} \\
+\hline
+{\em position} & x \mbox{[}m\mbox{]}, y \mbox{[}m\mbox{]}, angle \mbox{[}radians\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLaser_af2d93a5e123f3b637be6d3383019562b}\label{classLaser_af2d93a5e123f3b637be6d3383019562b}} 
+\index{Laser@{Laser}!generate\+Data@{generate\+Data}}
+\index{generate\+Data@{generate\+Data}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{generate\+Data()}{generateData()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Laser\+::generate\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Generates raw data for the sensor. 
+
+\begin{DoxyReturn}{Returns}
+vector containing senor data
+\end{DoxyReturn}
+returning vector of doubles contain \textquotesingle{}Nl\textquotesingle{} number of reading. \textquotesingle{}Nl\textquotesingle{} is an integer number of readings (F\+O\+V/angular resolution)+1. The values should be distances to points within the F\+OV range between min and max range.
+
+The function calculates Nl number of distances, between min and max. 
+
+Implements \hyperlink{classRanger_a1ac4a84f251b0793fc262643080f084a}{Ranger}.
+
+\mbox{\Hypertarget{classLaser_a518ac84d4631b1550330d664e161ca0a}\label{classLaser_a518ac84d4631b1550330d664e161ca0a}} 
+\index{Laser@{Laser}!set\+Angular\+Resolution@{set\+Angular\+Resolution}}
+\index{set\+Angular\+Resolution@{set\+Angular\+Resolution}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{set\+Angular\+Resolution()}{setAngularResolution()}}
+{\footnotesize\ttfamily bool Laser\+::set\+Angular\+Resolution (\begin{DoxyParamCaption}\item[{unsigned int}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the agular resolution of the sensor based on the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if supported and actioned, false otherwise.
+\end{DoxyReturn}
+Actioned if the value is acceptable based on the model of the laser. (10 or 30 for S\+I\+C\+K-\/\+XL) 
+
+Reimplemented from \hyperlink{classRanger_a3dc62dcba54eefbd7a0f08cbf97d87dc}{Ranger}.
+
+\mbox{\Hypertarget{classLaser_a5f140784aae7e82c2aa0f690548d6ebb}\label{classLaser_a5f140784aae7e82c2aa0f690548d6ebb}} 
+\index{Laser@{Laser}!set\+Field\+Of\+View@{set\+Field\+Of\+View}}
+\index{set\+Field\+Of\+View@{set\+Field\+Of\+View}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{set\+Field\+Of\+View()}{setFieldOfView()}}
+{\footnotesize\ttfamily bool Laser\+::set\+Field\+Of\+View (\begin{DoxyParamCaption}\item[{unsigned int}]{fov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the field of view (F\+OV) of the sensor based on the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\+OV} & value \mbox{[}deg\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if actioned, false otherwise
+\end{DoxyReturn}
+F\+OV would be a value between 0 and 360 degrees for the command to be actioned (only 180 for S\+I\+C\+K-\/\+XL, connot be changed for this model) 
+
+Reimplemented from \hyperlink{classRanger_afb5d392ca450bcce295e61c121d09157}{Ranger}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+laser.\+h\item 
+laser.\+cpp\end{DoxyCompactItemize}

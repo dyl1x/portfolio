@@ -1,0 +1,8 @@
+<map id="bscpilot.h" name="bscpilot.h">
+<area shape="rect" id="node2" href="$pilotbase_8h.html" title="Base class of Pilot. " alt="" coords="477,155,562,181"/>
+<area shape="rect" id="node14" href="$bscpathfinder_8h.html" title="Child class of PathFinder. " alt="" coords="612,80,723,107"/>
+<area shape="rect" id="node3" href="$pilotinterface_8h.html" title="Interface class for Pilot classes. " alt="" coords="519,229,626,256"/>
+<area shape="rect" id="node11" href="$tf2_8h.html" title="Collection of transforms between structures defined under types namespace. " alt="" coords="701,229,749,256"/>
+<area shape="rect" id="node17" href="$pathfinderbase_8h.html" title="Base class for PathFinder classes. " alt="" coords="763,155,881,181"/>
+<area shape="rect" id="node18" href="$pathfinderinterface_8h.html" title="Interface class for PathFinder classes. " alt="" coords="875,229,1015,256"/>
+</map>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a2-tests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mock_lib">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/libmock_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 mock_lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mock_lib/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/libmock_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 mock_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionSonar">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionSonar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionSonar"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionSonar/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionSonar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionSonar/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="student_lib">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/libstudent_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 student_lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="student_lib/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/libstudent_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 student_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionTests">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionTests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionTests/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionTests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rawTests">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/rawTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 rawTests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rawTests/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/rawTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 rawTests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionLaser">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionLaser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionLaser"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fusionLaser/fast">
+				<Option output="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/fusionLaser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/../include"/>
+					<Add directory="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/.."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 fusionLaser/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Default/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/cell.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/cell.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/circle.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/circle.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/laser.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/laser.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/line.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/processing.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/processing.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/ranger.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/ranger.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/rangerfusion.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/rangerfusion.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/sonar.cpp">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/sonar.h">
+			<Option target="mock_lib"/>
+			<Option target="student_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/laser_fusion.cpp">
+			<Option target="fusionLaser"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/mock/rangermocklaser.cpp">
+			<Option target="mock_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/mock/rangermocklaser.h">
+			<Option target="mock_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/mock/rangermocksonar.cpp">
+			<Option target="mock_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/mock/rangermocksonar.h">
+			<Option target="mock_lib"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/sonar_fusion.cpp">
+			<Option target="fusionSonar"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/test_fusion.cpp">
+			<Option target="fusionTests"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/test_rawdata.cpp">
+			<Option target="rawTests"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

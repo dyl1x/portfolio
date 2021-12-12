@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['generatedata',['generateData',['../classLaser.html#af2d93a5e123f3b637be6d3383019562b',1,'Laser::generateData()'],['../classRanger.html#a1ac4a84f251b0793fc262643080f084a',1,'Ranger::generateData()'],['../classSonar.html#a33cc5f2df6cc1d96a59067be67eab781',1,'Sonar::generateData()']]],
+  ['getangularresolution',['getAngularResolution',['../classRanger.html#a95b5013ae191d1e19b93fab002306718',1,'Ranger::getAngularResolution()'],['../classRangerInterface.html#a37d4f89daffa8b2708dfc11034893552',1,'RangerInterface::getAngularResolution()']]],
+  ['getarea',['getArea',['../classCircle.html#a99fe1cbabbf3a9ccae51832376c5e8d4',1,'Circle']]],
+  ['getcells',['getCells',['../classRangerFusion.html#aaf0f90048ff744580eeb73a2bf3a38f7',1,'RangerFusion']]],
+  ['getcentre',['getCentre',['../classCell.html#a1087822ba50d7afea999824cca8cc1f4',1,'Cell']]],
+  ['getfieldofview',['getFieldOfView',['../classRanger.html#a4bca7dce56b7959257d90b1f30bf0271',1,'Ranger::getFieldOfView()'],['../classRangerInterface.html#a18716da6932402b8dda75f682be6f06c',1,'RangerInterface::getFieldOfView()']]],
+  ['getgradient',['getGradient',['../classLine.html#a872b756c94ed478d05e430ebb436b116',1,'Line']]],
+  ['getmaxrange',['getMaxRange',['../classRanger.html#aba5e81260e55089d9ff869051156a722',1,'Ranger::getMaxRange()'],['../classRangerInterface.html#a0bb29a41de5767c99081002c0590c186',1,'RangerInterface::getMaxRange()']]],
+  ['getminrange',['getMinRange',['../classRanger.html#a646a06d3916179b9ebc4502bad169eec',1,'Ranger::getMinRange()'],['../classRangerInterface.html#ae6d501ddeeaad4a7b44d7d51ce64cb88',1,'RangerInterface::getMinRange()']]],
+  ['getpoints',['getPoints',['../classLine.html#acc07117e5463e70ee1159b55d5dc4502',1,'Line']]],
+  ['getradius',['getRadius',['../classCircle.html#af9fccec77d3a15d63594666dc8501437',1,'Circle']]],
+  ['getrawrangedata',['getRawRangeData',['../classRangerFusion.html#a5780383fdffe121a7a2372a047819ba9',1,'RangerFusion::getRawRangeData()'],['../classRangerFusionInterface.html#a9d60ca5866261026b870d7c0171587f5',1,'RangerFusionInterface::getRawRangeData()']]],
+  ['getscanarea',['getScanArea',['../classSonar.html#ac47b8e7936dfd5c3bde262baf301d46d',1,'Sonar']]],
+  ['getscanningarea',['getScanningArea',['../classRangerFusion.html#a7215e5405e808b5a853984e2b70ed6ad',1,'RangerFusion::getScanningArea()'],['../classRangerFusionInterface.html#a65155605804376da4f67baf3c6f97f40',1,'RangerFusionInterface::getScanningArea()']]],
+  ['getsensingmethod',['getSensingMethod',['../classRanger.html#a47e30b7ec55adec5bb542278ccfee140',1,'Ranger::getSensingMethod()'],['../classRangerInterface.html#aeb06b9835f2b162b81917bd27797549b',1,'RangerInterface::getSensingMethod()']]],
+  ['getsensorpose',['getSensorPose',['../classRanger.html#aec1e730fbf4b46b01b08f6655152fc39',1,'Ranger::getSensorPose()'],['../classRangerInterface.html#a7f6db3f603d997ad6c5aa5c7778261f4',1,'RangerInterface::getSensorPose()']]],
+  ['getsequencenum',['getSequenceNum',['../classRanger.html#a35dfc3ff4e5c6c31a8625e972365006e',1,'Ranger']]],
+  ['getside',['getSide',['../classCell.html#a8369e6773b462215ea3c13d216621cb7',1,'Cell']]],
+  ['getstate',['getState',['../classCell.html#aba131004c3f0bade13ef1b72e5694885',1,'Cell']]],
+  ['getyintercept',['getYIntercept',['../classLine.html#ac3bf0f79e9748a26ad1dd347fe97da75',1,'Line']]],
+  ['grabandfusedata',['grabAndFuseData',['../classRangerFusion.html#aa9265f72bc3572567c9cf98cf6d9f0e1',1,'RangerFusion::grabAndFuseData()'],['../classRangerFusionInterface.html#ada6afdab2ce6d58a1bd0134f5e2be23f',1,'RangerFusionInterface::grabAndFuseData()']]]
+];

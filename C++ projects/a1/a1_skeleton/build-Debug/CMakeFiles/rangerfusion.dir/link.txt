@@ -1,0 +1,2 @@
+/usr/bin/ar qc librangerfusion.a  CMakeFiles/rangerfusion.dir/rangerfusion.cpp.o
+/usr/bin/ranlib librangerfusion.a

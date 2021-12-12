@@ -1,0 +1,2 @@
+/usr/bin/ar qc libranger.a  CMakeFiles/ranger.dir/ranger.cpp.o CMakeFiles/ranger.dir/laser.cpp.o CMakeFiles/ranger.dir/sonar.cpp.o
+/usr/bin/ranlib libranger.a

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPilotInterface.html" title="PilotInterface" alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$classPilotBase.html" title="PilotBase" alt="" coords="152,31,231,57"/>
+<area shape="rect" id="node3" href="$classAdvPilot.html" title="AdvPilot" alt="" coords="279,5,349,32"/>
+<area shape="rect" id="node4" href="$classBscPilot.html" title="BscPilot" alt="" coords="279,56,349,83"/>
+</map>

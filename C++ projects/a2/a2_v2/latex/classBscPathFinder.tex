@@ -1,0 +1,116 @@
+\hypertarget{classBscPathFinder}{}\section{Bsc\+Path\+Finder Class Reference}
+\label{classBscPathFinder}\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+
+
+Inheritance diagram for Bsc\+Path\+Finder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classBscPathFinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bsc\+Path\+Finder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classBscPathFinder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBscPathFinder_aa360fb55393b67d37331c3fc06cb8231}{Bsc\+Path\+Finder} (double maxV, double maxG, double minV)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBscPathFinder}{Bsc\+Path\+Finder}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBscPathFinder_a26c9f756fd50796b3d3848dba82bb957}\label{classBscPathFinder_a26c9f756fd50796b3d3848dba82bb957}} 
+\hyperlink{classBscPathFinder_a26c9f756fd50796b3d3848dba82bb957}{$\sim$\+Bsc\+Path\+Finder} ()
+\begin{DoxyCompactList}\small\item\em Bsc\+Pathfinder Destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classBscPathFinder_abbcde7b0e482fdc4f3fb1428c88bccb5}{get\+Path} ()
+\begin{DoxyCompactList}\small\item\em getpath \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBscPathFinder_a2bba029656eeb264e4035e3e5dd91726}{add\+Nodes} ()
+\begin{DoxyCompactList}\small\item\em add\+Nodes \end{DoxyCompactList}\item 
+double \hyperlink{classBscPathFinder_a0b0e1491b8819d4882575c39bb5def82}{get\+Weight} (double range, double bearing)
+\begin{DoxyCompactList}\small\item\em get\+Weight \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBscPathFinder_aa360fb55393b67d37331c3fc06cb8231}\label{classBscPathFinder_aa360fb55393b67d37331c3fc06cb8231}} 
+\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}!Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}!Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+\subsubsection{\texorpdfstring{Bsc\+Path\+Finder()}{BscPathFinder()}}
+{\footnotesize\ttfamily Bsc\+Path\+Finder\+::\+Bsc\+Path\+Finder (\begin{DoxyParamCaption}\item[{double}]{maxV,  }\item[{double}]{maxG,  }\item[{double}]{minV }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classBscPathFinder}{Bsc\+Path\+Finder}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxV} & -\/ max velocity \\
+\hline
+{\em maxG} & -\/ max G force \\
+\hline
+{\em minV} & -\/ min velocity\\
+\hline
+\end{DoxyParams}
+Creates an object that does path planning for basic mode 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBscPathFinder_a2bba029656eeb264e4035e3e5dd91726}\label{classBscPathFinder_a2bba029656eeb264e4035e3e5dd91726}} 
+\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}!add\+Nodes@{add\+Nodes}}
+\index{add\+Nodes@{add\+Nodes}!Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+\subsubsection{\texorpdfstring{add\+Nodes()}{addNodes()}}
+{\footnotesize\ttfamily void Bsc\+Path\+Finder\+::add\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+add\+Nodes 
+
+adds nodes to the matrix, doesnt update the path. \mbox{\Hypertarget{classBscPathFinder_abbcde7b0e482fdc4f3fb1428c88bccb5}\label{classBscPathFinder_abbcde7b0e482fdc4f3fb1428c88bccb5}} 
+\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ Bsc\+Path\+Finder\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getpath 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Uses T\+SP algorithm to calculate the \char`\"{}best\char`\"{} order to navigate the points, visiting each point at least once. Brute force mehtod from geeks for geeks. Modified to use vectors and doesnt add the return distance. https\+://www.\+geeksforgeeks.\+org/traveling-\/salesman-\/problem-\/tsp-\/implementation/$>$geeksforgeeks
+
+Implements \hyperlink{classPathFinderBase_aa254c2b8392f028898f691920341caa0}{Path\+Finder\+Base}.
+
+\mbox{\Hypertarget{classBscPathFinder_a0b0e1491b8819d4882575c39bb5def82}\label{classBscPathFinder_a0b0e1491b8819d4882575c39bb5def82}} 
+\index{Bsc\+Path\+Finder@{Bsc\+Path\+Finder}!get\+Weight@{get\+Weight}}
+\index{get\+Weight@{get\+Weight}!Bsc\+Path\+Finder@{Bsc\+Path\+Finder}}
+\subsubsection{\texorpdfstring{get\+Weight()}{getWeight()}}
+{\footnotesize\ttfamily double Bsc\+Path\+Finder\+::get\+Weight (\begin{DoxyParamCaption}\item[{double}]{range,  }\item[{double}]{bearing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+get\+Weight 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & from point a to b \\
+\hline
+{\em bearing} & of point b from a \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+edge weight
+\end{DoxyReturn}
+uses the turn angle and the estimated travelling distance to calculate a weight, which is the total time taken to reach the given coordinates from current position 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bscpathfinder_8h}{bscpathfinder.\+h}\item 
+bscpathfinder.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -g  -rdynamic CMakeFiles/a2_skeleton_ex.dir/main.cpp.o  -o a2_skeleton_ex libranger.a libcell.a librangerfusion.a libgeometry.a 

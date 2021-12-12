@@ -1,0 +1,39 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Main entry point for assignment 2.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}simulator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bscpilot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}advpilot.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main entry point for assignment 2. 
+
+Creats an instance of the simulator depending on the input at execution. The game mode will be decided based on the input and the simulator will be passed into the appropriate pilot class which will control the friendly aircraft in the simulation, to locate and intercept bogies.
+
+Basic mode -\/ Bogies are stationary Advanced -\/ Bogies move in a straight line at contant velocity.
+
+\begin{DoxyAuthor}{Author}
+Chamath Edirisinhege -\/ 12977866 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 Sept 2021 
+\end{DoxyDate}

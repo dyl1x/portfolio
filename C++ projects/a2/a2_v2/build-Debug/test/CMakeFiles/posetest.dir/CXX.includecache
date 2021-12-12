@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../dep/include/tf.h
+types.h
+../dep/include/types.h
+
+../dep/include/types.h
+vector
+-
+cmath
+-
+
+../test/../tf2.h
+cmath
+-
+types.h
+../test/../types.h
+tf.h
+../test/../tf.h
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/test/posetest.cpp
+gtest/gtest.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/test/gtest/gtest.h
+iostream
+-
+vector
+-
+types.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/test/types.h
+tf.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/test/tf.h
+tf2.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/test/tf2.h
+

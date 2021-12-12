@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcontrol.a  CMakeFiles/control.dir/pilotbase.cpp.o CMakeFiles/control.dir/advpilot.cpp.o CMakeFiles/control.dir/bscpilot.cpp.o
+/usr/bin/ranlib libcontrol.a

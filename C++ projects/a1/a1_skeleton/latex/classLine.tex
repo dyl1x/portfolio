@@ -1,0 +1,130 @@
+\hypertarget{classLine}{}\section{Line Class Reference}
+\label{classLine}\index{Line@{Line}}
+
+
+\hyperlink{classLine}{Line} class.  
+
+
+
+
+{\ttfamily \#include $<$line.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLine_abad81a289f4a192ebdfdaae35dcd8a87}{Line} (\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} pt1, \hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} pt2)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classLine_a058bf81f941f204ec351925660c296b3}{point\+Above\+Line} (\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} pt)
+\begin{DoxyCompactList}\small\item\em checks if a point is above the \hyperlink{classLine}{Line} \end{DoxyCompactList}\item 
+double \hyperlink{classLine_a872b756c94ed478d05e430ebb436b116}{get\+Gradient} ()
+\begin{DoxyCompactList}\small\item\em gets the Gradient \end{DoxyCompactList}\item 
+double \hyperlink{classLine_ac3bf0f79e9748a26ad1dd347fe97da75}{get\+Y\+Intercept} ()
+\begin{DoxyCompactList}\small\item\em gets the Y-\/\+Intercept \end{DoxyCompactList}\item 
+void \hyperlink{classLine_acc07117e5463e70ee1159b55d5dc4502}{get\+Points} (\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} \&pt1, \hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} \&pt2)
+\begin{DoxyCompactList}\small\item\em get the two Points of the line segment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classLine}{Line} class. 
+
+Creates a \hyperlink{classLine}{Line} between given points in space, and stores its geometric properties \begin{DoxyAuthor}{Author}
+Chamath Edirisinhege 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/08-\/31 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]none reported as of 2021-\/09-\/07 \end{DoxyRefDesc}
+
+
+Lreates a line, and stores its geometric properties. Taken from quiz2 and then modified. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLine_abad81a289f4a192ebdfdaae35dcd8a87}\label{classLine_abad81a289f4a192ebdfdaae35dcd8a87}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point}}]{pt1,  }\item[{\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point}}]{pt2 }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & point, ending point\\
+\hline
+\end{DoxyParams}
+generates a line segment between the two points. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLine_a872b756c94ed478d05e430ebb436b116}\label{classLine_a872b756c94ed478d05e430ebb436b116}} 
+\index{Line@{Line}!get\+Gradient@{get\+Gradient}}
+\index{get\+Gradient@{get\+Gradient}!Line@{Line}}
+\subsubsection{\texorpdfstring{get\+Gradient()}{getGradient()}}
+{\footnotesize\ttfamily double Line\+::get\+Gradient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the Gradient 
+
+\begin{DoxyReturn}{Returns}
+gradient 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLine_acc07117e5463e70ee1159b55d5dc4502}\label{classLine_acc07117e5463e70ee1159b55d5dc4502}} 
+\index{Line@{Line}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Line@{Line}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily void Line\+::get\+Points (\begin{DoxyParamCaption}\item[{\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} \&}]{pt1,  }\item[{\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point} \&}]{pt2 }\end{DoxyParamCaption})}
+
+
+
+get the two Points of the line segment 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt1} & holding variable for first point \\
+\hline
+{\em pt2} & holding variable for first point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLine_ac3bf0f79e9748a26ad1dd347fe97da75}\label{classLine_ac3bf0f79e9748a26ad1dd347fe97da75}} 
+\index{Line@{Line}!get\+Y\+Intercept@{get\+Y\+Intercept}}
+\index{get\+Y\+Intercept@{get\+Y\+Intercept}!Line@{Line}}
+\subsubsection{\texorpdfstring{get\+Y\+Intercept()}{getYIntercept()}}
+{\footnotesize\ttfamily double Line\+::get\+Y\+Intercept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the Y-\/\+Intercept 
+
+\begin{DoxyReturn}{Returns}
+y intercept 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLine_a058bf81f941f204ec351925660c296b3}\label{classLine_a058bf81f941f204ec351925660c296b3}} 
+\index{Line@{Line}!point\+Above\+Line@{point\+Above\+Line}}
+\index{point\+Above\+Line@{point\+Above\+Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{point\+Above\+Line()}{pointAboveLine()}}
+{\footnotesize\ttfamily bool Line\+::point\+Above\+Line (\begin{DoxyParamCaption}\item[{\hyperlink{structgeometry__msgs_1_1Point}{geometry\+\_\+msgs\+::\+Point}}]{pt }\end{DoxyParamCaption})}
+
+
+
+checks if a point is above the \hyperlink{classLine}{Line} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & -\/ test point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if test point is above the line 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+line.\+h\item 
+line.\+cpp\end{DoxyCompactItemize}

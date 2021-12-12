@@ -1,0 +1,43 @@
+/*!
+
+*/
+
+// without this gap between two doxygen definition, the last group does not get
+// populated properly for some reason.
+
+/*!
+@mainpage Assignment 1: Utilising Abstraction for a Range of Sensor Classes
+
+The task is to simulates the generation of data from several sensor(rangers) types, and performs data fusion.The sensors simulated currently include Laser and Sonar sensors.
+Areas of interest, called cells, are generated, and then the Fusion class and would process the cell data and sensor data to provide the user with and understanding of the state of each cell (0 = Unknown, 1 = free and -1 = Occupied). The classes used to develop this program are explored here. There is example program available in main.cpp.
+
+@section ac_doc_index_more_info Setting up
+
+To use the ranger library, begin by first instantiating the sensors using the respective sensor classes. The default laser is a SICK-XL laser, and is the only laser supported and an object of this type can be generated at the origin without any rotational offset by using the default constructor. For the sonar, it is a SN-001. Alternatively, objects can be initialized at different points in space. The position can be changed later using the other included functions.
+
+
+@subsection ac_doc_sensor_classes Sensor classes
+
+The Laser and Sonar classses are both derived from the parent class "Ranger". This is to provide modularity for other sub-classes, different types of sensors, to be added in the future. The Laser and Sonar will be initialized with the default settings. These defaults can be found in the documentation detailing the default constructor of the class. Each of the parameters has the ability to be changed and queried by the user, provided the sensor support the values given, information about supported values can be found on the class descriptions, in this document.
+
+@subsection ac_doc_setup_fusion Setup Fusion
+
+To begin using the the RangerFusion class, first instantiate the ranger fusion object by passing a vector of pointers to your rangers (lasers and/or sonars) using the default constructor.
+Next, call the \ref RangerFusion::setCells "setCells", passing a vector of cells to be fused. These cells will be automatically be given a random position within the 10x10 grid, however, their positions can be manually set using setCentre method.
+
+
+
+@section ac_doc_fusion Fusion
+
+Once setup is complete and you have set the required parameters for your sensors,
+call \ref RangerFusion::grabAndFuseData "grabAndFuseData" to begin fusion.
+
+When this method is called, the sensors are queried for randomly generated range data (according to it's type). Processing takes place to determine if the sensors have detected the cells and the results will be either Unknown(0), Free(1) or Occupied(-1). The variable holding this value will be set accordingly during this process. The results can be extracted by calling the \ref RangerFusion::getCells "getCells" method and querrying individual cells using \ref Cell::getState "getState" method. Details of the processing component can be found in the documentation relating to the functions of the Fusion class. These also use helper functions from the geometry library for calculations.
+
+@section ac_doc_fusion_more_info How fusion works
+
+Taking the container of rangers the function first promts each of the sensors to generate data and stores the data iside itself in the same order. Next the function cycles through the rangers and checks if its cone based or point based. Depending on the type of sensor the function will generate needed geometry for calculations. Point based sensor reaedings are converted to straigh line segments and cone based sensor readings are translated into circle sectors. The function would cycle through all the cells and set the state to unknown. Using the geometry data the function then cycles through all the cells and set their state. Cells can only have one of three states : Free , Unknown and Occupied. If the end of the sonar return lies inside the cell then the cell is occupied, if it goes through the cell then it is free. If it does not intersect with the cell then it is unaffected and remains in unknown state. When the laser sensor interacts with the cell it can change its state. If any single laser reading lies inside the cell then the cell is occupied, if a ray goes through the cell then it is free. If it does not intersect the cell then it is unaffected. Cells with ALL four corners inside the minimum range of the cells will not be detected by the laser and ignored. Occupancy takes precedence, if one sensor detects the cell as occupied then the cell is occupied and it wont be querried again during the loop.
+ 
+@n By Chamath Edirisinhege
+@n chamath.m.edirisinhege@uts.edu.au
+*/

@@ -1,0 +1,5 @@
+<map id="RangerInterface" name="RangerInterface">
+<area shape="rect" id="node2" href="$classRanger.html" title="Ranger base Class. " alt="" coords="41,80,105,107"/>
+<area shape="rect" id="node3" href="$classLaser.html" title="The Laser type sensor class This class is derived from the base class Ranger. " alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node4" href="$classSonar.html" title="The Sonar type sensor class. This class is derived from the base class Ranger. " alt="" coords="85,155,141,181"/>
+</map>

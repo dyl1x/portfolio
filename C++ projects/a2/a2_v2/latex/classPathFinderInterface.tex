@@ -1,0 +1,79 @@
+\hypertarget{classPathFinderInterface}{}\section{Path\+Finder\+Interface Class Reference}
+\label{classPathFinderInterface}\index{Path\+Finder\+Interface@{Path\+Finder\+Interface}}
+
+
+Inheritance diagram for Path\+Finder\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classPathFinderInterface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classPathFinderInterface_a9c6812f65fba254224a475a4128441a8}{$\sim$\+Path\+Finder\+Interface} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPathFinderInterface}{Path\+Finder\+Interface} destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPathFinderInterface_a8a2011052fb64cab85a66a21092416f2}{update} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$ rbs\+Bogie, geometry\+\_\+msgs\+::\+Pose loc)=0
+\begin{DoxyCompactList}\small\item\em update \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classPathFinderInterface_adb55c9eab1ef3c4c1374c9d4313631de}{get\+Path} ()=0
+\begin{DoxyCompactList}\small\item\em get\+Path \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPathFinderInterface_a9c6812f65fba254224a475a4128441a8}\label{classPathFinderInterface_a9c6812f65fba254224a475a4128441a8}} 
+\index{Path\+Finder\+Interface@{Path\+Finder\+Interface}!````~Path\+Finder\+Interface@{$\sim$\+Path\+Finder\+Interface}}
+\index{````~Path\+Finder\+Interface@{$\sim$\+Path\+Finder\+Interface}!Path\+Finder\+Interface@{Path\+Finder\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Path\+Finder\+Interface()}{~PathFinderInterface()}}
+{\footnotesize\ttfamily virtual Path\+Finder\+Interface\+::$\sim$\+Path\+Finder\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{classPathFinderInterface}{Path\+Finder\+Interface} destructor. 
+
+Refer https\+://stackoverflow.\+com/questions/3628529/should-\/c-\/interfaces-\/have-\/a-\/virtual-\/destructor$>$stckoverflowformoreinfo.
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPathFinderInterface_adb55c9eab1ef3c4c1374c9d4313631de}\label{classPathFinderInterface_adb55c9eab1ef3c4c1374c9d4313631de}} 
+\index{Path\+Finder\+Interface@{Path\+Finder\+Interface}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Path\+Finder\+Interface@{Path\+Finder\+Interface}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$geometry\+\_\+msgs\+::\+Point$>$ Path\+Finder\+Interface\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Path 
+
+\begin{DoxyReturn}{Returns}
+vector of points in the global frame arranged in ascending order with the closes one is first. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAdvPathFinder_a4abff5170d4b63a4fa98262d90e14f32}{Adv\+Path\+Finder}, \hyperlink{classBscPathFinder_abbcde7b0e482fdc4f3fb1428c88bccb5}{Bsc\+Path\+Finder}, and \hyperlink{classPathFinderBase_aa254c2b8392f028898f691920341caa0}{Path\+Finder\+Base}.
+
+\mbox{\Hypertarget{classPathFinderInterface_a8a2011052fb64cab85a66a21092416f2}\label{classPathFinderInterface_a8a2011052fb64cab85a66a21092416f2}} 
+\index{Path\+Finder\+Interface@{Path\+Finder\+Interface}!update@{update}}
+\index{update@{update}!Path\+Finder\+Interface@{Path\+Finder\+Interface}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Path\+Finder\+Interface\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Range\+Bearing\+Stamped $>$}]{rbs\+Bogie,  }\item[{geometry\+\_\+msgs\+::\+Pose}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rbs\+Bogie} & -\/ bogie data from friendly radar \\
+\hline
+{\em loc} & -\/ friendly location\\
+\hline
+\end{DoxyParams}
+updates the variables with the latest information recieved from the friendly 
+
+Implemented in \hyperlink{classPathFinderBase_a7ab8a19a0247b66e5636e29194e5fadd}{Path\+Finder\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pathfinderinterface_8h}{pathfinderinterface.\+h}\end{DoxyCompactItemize}

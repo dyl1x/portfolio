@@ -1,0 +1,6 @@
+<map id="pilotinterface.h" name="pilotinterface.h">
+<area shape="rect" id="node2" href="$pilotbase_8h.html" title="Base class of Pilot. " alt="" coords="53,80,138,107"/>
+<area shape="rect" id="node3" href="$advpilot_8h.html" title="Child class of Pilot for advanced mode. " alt="" coords="5,155,84,181"/>
+<area shape="rect" id="node5" href="$bscpilot_8h.html" title="Child class of Pilot for Basic mode. " alt="" coords="108,155,187,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Main entry point for assignment 2. " alt="" coords="58,229,133,256"/>
+</map>

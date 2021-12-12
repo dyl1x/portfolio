@@ -1,0 +1,155 @@
+\hypertarget{classAdvPilot}{}\section{Adv\+Pilot Class Reference}
+\label{classAdvPilot}\index{Adv\+Pilot@{Adv\+Pilot}}
+
+
+Inheritance diagram for Adv\+Pilot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classAdvPilot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adv\+Pilot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classAdvPilot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAdvPilot_aadb751697a17bad8e80ac26c1a05601b}{Adv\+Pilot} (std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$ sim)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAdvPilot}{Adv\+Pilot}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAdvPilot_a7356cb2e0d2388ed5958dbfb5fa073d6}\label{classAdvPilot_a7356cb2e0d2388ed5958dbfb5fa073d6}} 
+\hyperlink{classAdvPilot_a7356cb2e0d2388ed5958dbfb5fa073d6}{$\sim$\+Adv\+Pilot} ()
+\begin{DoxyCompactList}\small\item\em Adv\+Polit Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAdvPilot_a8a6c363126dc017d6b3e2ca8cc761117}{start} ()
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAdvPilot_a5da70d6e9d93bf585a84af786d067739}{control} ()
+\begin{DoxyCompactList}\small\item\em control \end{DoxyCompactList}\item 
+void \hyperlink{classAdvPilot_a1a7f8ca0d8c97120fa2c93f7e512c944}{get\+Information} ()
+\begin{DoxyCompactList}\small\item\em get\+Information \end{DoxyCompactList}\item 
+void \hyperlink{classAdvPilot_a06a08829ecef443f01860f48fc462c22}{drive} ()
+\begin{DoxyCompactList}\small\item\em drive \end{DoxyCompactList}\item 
+void \hyperlink{classAdvPilot_af5c8b68901afc6b23569f80a349d6ca8}{set\+Speeds} (geometry\+\_\+msgs\+::\+Point goal)
+\begin{DoxyCompactList}\small\item\em set\+Speeds \end{DoxyCompactList}\item 
+bool \hyperlink{classAdvPilot_ab765761fe28864de73c621b24b8f67cd}{check\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em check\+Bounds \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAdvPilot_aadb751697a17bad8e80ac26c1a05601b}\label{classAdvPilot_aadb751697a17bad8e80ac26c1a05601b}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!Adv\+Pilot@{Adv\+Pilot}}
+\index{Adv\+Pilot@{Adv\+Pilot}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{Adv\+Pilot()}{AdvPilot()}}
+{\footnotesize\ttfamily Adv\+Pilot\+::\+Adv\+Pilot (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$}]{sim }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classAdvPilot}{Adv\+Pilot}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sim} & -\/ -\/ simulation shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAdvPilot_ab765761fe28864de73c621b24b8f67cd}\label{classAdvPilot_ab765761fe28864de73c621b24b8f67cd}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!check\+Bounds@{check\+Bounds}}
+\index{check\+Bounds@{check\+Bounds}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{check\+Bounds()}{checkBounds()}}
+{\footnotesize\ttfamily bool Adv\+Pilot\+::check\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+Bounds 
+
+checks if the current location is within 100m of the end of the air space. \begin{DoxyReturn}{Returns}
+true if close to outside. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdvPilot_a5da70d6e9d93bf585a84af786d067739}\label{classAdvPilot_a5da70d6e9d93bf585a84af786d067739}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!control@{control}}
+\index{control@{control}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily void Adv\+Pilot\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+control 
+
+Manage the inputs to the simulator, the linear velocity and the angular velocity 
+
+Reimplemented from \hyperlink{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classAdvPilot_a06a08829ecef443f01860f48fc462c22}\label{classAdvPilot_a06a08829ecef443f01860f48fc462c22}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!drive@{drive}}
+\index{drive@{drive}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{drive()}{drive()}}
+{\footnotesize\ttfamily void Adv\+Pilot\+::drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+drive 
+
+This function uses the information to find out where to go and then calculate how to get there. 
+
+Implements \hyperlink{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classAdvPilot_a1a7f8ca0d8c97120fa2c93f7e512c944}\label{classAdvPilot_a1a7f8ca0d8c97120fa2c93f7e512c944}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily void Adv\+Pilot\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+get\+Information 
+
+Querries the simulator and update the infromation about the bogies everytime an update is available. This function will be in it own thread. 
+
+Implements \hyperlink{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classAdvPilot_af5c8b68901afc6b23569f80a349d6ca8}\label{classAdvPilot_af5c8b68901afc6b23569f80a349d6ca8}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!set\+Speeds@{set\+Speeds}}
+\index{set\+Speeds@{set\+Speeds}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{set\+Speeds()}{setSpeeds()}}
+{\footnotesize\ttfamily void Adv\+Pilot\+::set\+Speeds (\begin{DoxyParamCaption}\item[{geometry\+\_\+msgs\+::\+Point}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Speeds 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal} & -\/ waypoint\\
+\hline
+\end{DoxyParams}
+sets the speeds to reach the waypoint \mbox{\Hypertarget{classAdvPilot_a8a6c363126dc017d6b3e2ca8cc761117}\label{classAdvPilot_a8a6c363126dc017d6b3e2ca8cc761117}} 
+\index{Adv\+Pilot@{Adv\+Pilot}!start@{start}}
+\index{start@{start}!Adv\+Pilot@{Adv\+Pilot}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Adv\+Pilot\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+start 
+
+Starts the threads and assign work tot he threads 
+
+Reimplemented from \hyperlink{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}{Pilot\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{advpilot_8h}{advpilot.\+h}\item 
+advpilot.\+cpp\end{DoxyCompactItemize}

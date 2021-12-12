@@ -1,0 +1,106 @@
+\hypertarget{classPilotInterface}{}\section{Pilot\+Interface Class Reference}
+\label{classPilotInterface}\index{Pilot\+Interface@{Pilot\+Interface}}
+
+
+Inheritance diagram for Pilot\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classPilotInterface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classPilotInterface_a05a84532207fc97e9caa6caa09be1d44}{$\sim$\+Pilot\+Interface} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Pilot\+Interface \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotInterface_a86f3a427525364eb977fbe0a032fb9f7}{start} ()=0
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotInterface_a8847bf56785f024f6168e7c57bbb78dc}{control} ()=0
+\begin{DoxyCompactList}\small\item\em control \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotInterface_a8f328815397986cc26fc8baa2bb538e2}{get\+Information} ()=0
+\begin{DoxyCompactList}\small\item\em get\+Information \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotInterface_a73569195611ac3b77b85b8c3a317b1cf}{drive} ()=0
+\begin{DoxyCompactList}\small\item\em drive \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPilotInterface_a05a84532207fc97e9caa6caa09be1d44}\label{classPilotInterface_a05a84532207fc97e9caa6caa09be1d44}} 
+\index{Pilot\+Interface@{Pilot\+Interface}!````~Pilot\+Interface@{$\sim$\+Pilot\+Interface}}
+\index{````~Pilot\+Interface@{$\sim$\+Pilot\+Interface}!Pilot\+Interface@{Pilot\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Pilot\+Interface()}{~PilotInterface()}}
+{\footnotesize\ttfamily virtual Pilot\+Interface\+::$\sim$\+Pilot\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+$\sim$\+Pilot\+Interface 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+Refer https\+://stackoverflow.\+com/questions/3628529/should-\/c-\/interfaces-\/have-\/a-\/virtual-\/destructor$>$stckoverflowformoreinfo.
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPilotInterface_a8847bf56785f024f6168e7c57bbb78dc}\label{classPilotInterface_a8847bf56785f024f6168e7c57bbb78dc}} 
+\index{Pilot\+Interface@{Pilot\+Interface}!control@{control}}
+\index{control@{control}!Pilot\+Interface@{Pilot\+Interface}}
+\subsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily virtual void Pilot\+Interface\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+control 
+
+Manage the inputs to the simulator, the linear velocity and the angular velocity at the specified regular intervals. This function will be in its own thread. 
+
+Implemented in \hyperlink{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}{Pilot\+Base}, \hyperlink{classAdvPilot_a5da70d6e9d93bf585a84af786d067739}{Adv\+Pilot}, and \hyperlink{classBscPilot_a42240aa898a2719f14d816bbe08a0f3f}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotInterface_a73569195611ac3b77b85b8c3a317b1cf}\label{classPilotInterface_a73569195611ac3b77b85b8c3a317b1cf}} 
+\index{Pilot\+Interface@{Pilot\+Interface}!drive@{drive}}
+\index{drive@{drive}!Pilot\+Interface@{Pilot\+Interface}}
+\subsubsection{\texorpdfstring{drive()}{drive()}}
+{\footnotesize\ttfamily virtual void Pilot\+Interface\+::drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+drive 
+
+This function uses the information to find out where to go and then calculate how to get there. 
+
+Implemented in \hyperlink{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}{Pilot\+Base}, \hyperlink{classAdvPilot_a06a08829ecef443f01860f48fc462c22}{Adv\+Pilot}, and \hyperlink{classBscPilot_af73cc7f821a08574eae05be8c5806646}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotInterface_a8f328815397986cc26fc8baa2bb538e2}\label{classPilotInterface_a8f328815397986cc26fc8baa2bb538e2}} 
+\index{Pilot\+Interface@{Pilot\+Interface}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Pilot\+Interface@{Pilot\+Interface}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily virtual void Pilot\+Interface\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Information 
+
+Querries the simulator and update the infromation about the bogies everytime an update is available. This function will be in it own thread. 
+
+Implemented in \hyperlink{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}{Pilot\+Base}, \hyperlink{classAdvPilot_a1a7f8ca0d8c97120fa2c93f7e512c944}{Adv\+Pilot}, and \hyperlink{classBscPilot_aa40dc622dc2c856c0a8b2e8c61970f00}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotInterface_a86f3a427525364eb977fbe0a032fb9f7}\label{classPilotInterface_a86f3a427525364eb977fbe0a032fb9f7}} 
+\index{Pilot\+Interface@{Pilot\+Interface}!start@{start}}
+\index{start@{start}!Pilot\+Interface@{Pilot\+Interface}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual void Pilot\+Interface\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+start 
+
+Starts the threads and assign work tot he threads 
+
+Implemented in \hyperlink{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}{Pilot\+Base}, \hyperlink{classAdvPilot_a8a6c363126dc017d6b3e2ca8cc761117}{Adv\+Pilot}, and \hyperlink{classBscPilot_a121a0ff2e9fc49b68d344d6785703702}{Bsc\+Pilot}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pilotinterface_8h}{pilotinterface.\+h}\end{DoxyCompactItemize}

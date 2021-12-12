@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnav.a  CMakeFiles/nav.dir/tf2.cpp.o CMakeFiles/nav.dir/pathfinderbase.cpp.o CMakeFiles/nav.dir/bscpathfinder.cpp.o CMakeFiles/nav.dir/advpathfinder.cpp.o
+/usr/bin/ranlib libnav.a

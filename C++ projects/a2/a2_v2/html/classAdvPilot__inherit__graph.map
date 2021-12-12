@@ -1,0 +1,4 @@
+<map id="AdvPilot" name="AdvPilot">
+<area shape="rect" id="node2" href="$classPilotBase.html" title="PilotBase" alt="" coords="15,80,94,107"/>
+<area shape="rect" id="node3" href="$classPilotInterface.html" title="PilotInterface" alt="" coords="5,5,104,32"/>
+</map>

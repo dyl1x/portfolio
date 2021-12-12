@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -std=c++11  -rdynamic CMakeFiles/laserTests.dir/test_laser.cpp.o  -o laserTests /usr/src/gtest/libgtest.a -lpthread libmock_lib.a 

@@ -1,0 +1,273 @@
+\hypertarget{classPilotBase}{}\section{Pilot\+Base Class Reference}
+\label{classPilotBase}\index{Pilot\+Base@{Pilot\+Base}}
+
+
+Inheritance diagram for Pilot\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classPilotBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pilot\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classPilotBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPilotBase_ad7443e4d4655d319c2ae5a6251b294f5}{Pilot\+Base} (std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$ sim)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPilotBase}{Pilot\+Base}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPilotBase_a510bddf81ba43b027f1655f60998316a}\label{classPilotBase_a510bddf81ba43b027f1655f60998316a}} 
+virtual \hyperlink{classPilotBase_a510bddf81ba43b027f1655f60998316a}{$\sim$\+Pilot\+Base} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPilotBase}{Pilot\+Base} destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}{start} ()
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}{control} ()
+\begin{DoxyCompactList}\small\item\em control \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}{get\+Information} ()=0
+\begin{DoxyCompactList}\small\item\em get\+Information \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}{drive} ()=0
+\begin{DoxyCompactList}\small\item\em drive \end{DoxyCompactList}\item 
+void \hyperlink{classPilotBase_a9245c4ef3c141166169a1f43aa61af3a}{test\+Poses} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ goals)
+\begin{DoxyCompactList}\small\item\em test\+Poses \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classPilotBase_a82d3b43b76c70d07cb5491974fe1f600}{control\+L\+V\+\_\+}
+\item 
+double \hyperlink{classPilotBase_aabd1864c036bdc142e5189b4d5b7c7f1}{control\+A\+V\+\_\+}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classPilotBase_aa6d7282efaf823724de187522476156e}{running\+\_\+}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classPilotBase_ab45516b59a0299c2fff103980d36fcbb}{updates\+\_\+}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classPilotBase_a9ff8d833d42683386ab80683134b305b}{directions\+\_\+}
+\item 
+bool \hyperlink{classPilotBase_ae8bb92255b3adf910c9d31f0d41c50e9}{bounds\+\_\+}
+\item 
+std\+::vector$<$ std\+::thread $>$ \hyperlink{classPilotBase_a477c1e12ccbb744f1099b8f201993a8d}{threads\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$ \hyperlink{classPilotBase_a4a4bd780088562427f52987edb4ad483}{sim\+\_\+}
+\item 
+std\+::vector$<$ Range\+Velocity\+Stamped $>$ \hyperlink{classPilotBase_a3c299fe0fc0d088a0b8aa7e23e687a6e}{rvs\+From\+Base\+\_\+}
+\item 
+std\+::vector$<$ Range\+Bearing\+Stamped $>$ \hyperlink{classPilotBase_ae89933ad32a4633b89dad48ef07494b6}{rbs\+From\+Friendly\+\_\+}
+\item 
+std\+::mutex \hyperlink{classPilotBase_af41263e699653e27b79d11ae04dd5380}{mu\+\_\+}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classPilotBase_ac784e1362d97a66206345dc87661401d}{cond\+\_\+}
+\item 
+std\+::mutex \hyperlink{classPilotBase_adadfe76dc44fb9181239010477a9d6ba}{mu2\+\_\+}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classPilotBase_a10f7b5604e3993094d681f031f566f49}{cond2\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPilotBase_ad7443e4d4655d319c2ae5a6251b294f5}\label{classPilotBase_ad7443e4d4655d319c2ae5a6251b294f5}} 
+\index{Pilot\+Base@{Pilot\+Base}!Pilot\+Base@{Pilot\+Base}}
+\index{Pilot\+Base@{Pilot\+Base}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{Pilot\+Base()}{PilotBase()}}
+{\footnotesize\ttfamily Pilot\+Base\+::\+Pilot\+Base (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$}]{sim }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classPilotBase}{Pilot\+Base}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sim} & -\/ simulation shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}\label{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}} 
+\index{Pilot\+Base@{Pilot\+Base}!control@{control}}
+\index{control@{control}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily void Pilot\+Base\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+control 
+
+Manage the inputs to the simulator, the linear velocity and the angular velocity 
+
+Implements \hyperlink{classPilotInterface_a8847bf56785f024f6168e7c57bbb78dc}{Pilot\+Interface}.
+
+
+
+Reimplemented in \hyperlink{classAdvPilot_a5da70d6e9d93bf585a84af786d067739}{Adv\+Pilot}, and \hyperlink{classBscPilot_a42240aa898a2719f14d816bbe08a0f3f}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}\label{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}} 
+\index{Pilot\+Base@{Pilot\+Base}!drive@{drive}}
+\index{drive@{drive}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{drive()}{drive()}}
+{\footnotesize\ttfamily virtual void Pilot\+Base\+::drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+drive 
+
+This function uses the information to find out where to go and then calculate how to get there. 
+
+Implements \hyperlink{classPilotInterface_a73569195611ac3b77b85b8c3a317b1cf}{Pilot\+Interface}.
+
+
+
+Implemented in \hyperlink{classAdvPilot_a06a08829ecef443f01860f48fc462c22}{Adv\+Pilot}, and \hyperlink{classBscPilot_af73cc7f821a08574eae05be8c5806646}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}\label{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}} 
+\index{Pilot\+Base@{Pilot\+Base}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily virtual void Pilot\+Base\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+get\+Information 
+
+Querries the simulator and update the infromation about the bogies everytime an update is available. This function will be in it own thread. 
+
+Implements \hyperlink{classPilotInterface_a8f328815397986cc26fc8baa2bb538e2}{Pilot\+Interface}.
+
+
+
+Implemented in \hyperlink{classAdvPilot_a1a7f8ca0d8c97120fa2c93f7e512c944}{Adv\+Pilot}, and \hyperlink{classBscPilot_aa40dc622dc2c856c0a8b2e8c61970f00}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}\label{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}} 
+\index{Pilot\+Base@{Pilot\+Base}!start@{start}}
+\index{start@{start}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Pilot\+Base\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+start 
+
+Starts the threads and assign work tot he threads 
+
+Implements \hyperlink{classPilotInterface_a86f3a427525364eb977fbe0a032fb9f7}{Pilot\+Interface}.
+
+
+
+Reimplemented in \hyperlink{classAdvPilot_a8a6c363126dc017d6b3e2ca8cc761117}{Adv\+Pilot}, and \hyperlink{classBscPilot_a121a0ff2e9fc49b68d344d6785703702}{Bsc\+Pilot}.
+
+\mbox{\Hypertarget{classPilotBase_a9245c4ef3c141166169a1f43aa61af3a}\label{classPilotBase_a9245c4ef3c141166169a1f43aa61af3a}} 
+\index{Pilot\+Base@{Pilot\+Base}!test\+Poses@{test\+Poses}}
+\index{test\+Poses@{test\+Poses}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{test\+Poses()}{testPoses()}}
+{\footnotesize\ttfamily void Pilot\+Base\+::test\+Poses (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$}]{goals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+test\+Poses 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goals} & -\/ vector of points\\
+\hline
+\end{DoxyParams}
+shows the points given on the display if its enabled within the simulation. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPilotBase_ae8bb92255b3adf910c9d31f0d41c50e9}\label{classPilotBase_ae8bb92255b3adf910c9d31f0d41c50e9}} 
+\index{Pilot\+Base@{Pilot\+Base}!bounds\+\_\+@{bounds\+\_\+}}
+\index{bounds\+\_\+@{bounds\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{bounds\+\_\+}{bounds\_}}
+{\footnotesize\ttfamily bool Pilot\+Base\+::bounds\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+out of bounds situation \mbox{\Hypertarget{classPilotBase_a10f7b5604e3993094d681f031f566f49}\label{classPilotBase_a10f7b5604e3993094d681f031f566f49}} 
+\index{Pilot\+Base@{Pilot\+Base}!cond2\+\_\+@{cond2\+\_\+}}
+\index{cond2\+\_\+@{cond2\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{cond2\+\_\+}{cond2\_}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable Pilot\+Base\+::cond2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+controls access to the control variables \mbox{\Hypertarget{classPilotBase_ac784e1362d97a66206345dc87661401d}\label{classPilotBase_ac784e1362d97a66206345dc87661401d}} 
+\index{Pilot\+Base@{Pilot\+Base}!cond\+\_\+@{cond\+\_\+}}
+\index{cond\+\_\+@{cond\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{cond\+\_\+}{cond\_}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable Pilot\+Base\+::cond\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+controls access to the control variables \mbox{\Hypertarget{classPilotBase_aabd1864c036bdc142e5189b4d5b7c7f1}\label{classPilotBase_aabd1864c036bdc142e5189b4d5b7c7f1}} 
+\index{Pilot\+Base@{Pilot\+Base}!control\+A\+V\+\_\+@{control\+A\+V\+\_\+}}
+\index{control\+A\+V\+\_\+@{control\+A\+V\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{control\+A\+V\+\_\+}{controlAV\_}}
+{\footnotesize\ttfamily double Pilot\+Base\+::control\+A\+V\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the most recent angular velocity value calculated \mbox{\Hypertarget{classPilotBase_a82d3b43b76c70d07cb5491974fe1f600}\label{classPilotBase_a82d3b43b76c70d07cb5491974fe1f600}} 
+\index{Pilot\+Base@{Pilot\+Base}!control\+L\+V\+\_\+@{control\+L\+V\+\_\+}}
+\index{control\+L\+V\+\_\+@{control\+L\+V\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{control\+L\+V\+\_\+}{controlLV\_}}
+{\footnotesize\ttfamily double Pilot\+Base\+::control\+L\+V\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the most recent linear velocity value calculated \mbox{\Hypertarget{classPilotBase_a9ff8d833d42683386ab80683134b305b}\label{classPilotBase_a9ff8d833d42683386ab80683134b305b}} 
+\index{Pilot\+Base@{Pilot\+Base}!directions\+\_\+@{directions\+\_\+}}
+\index{directions\+\_\+@{directions\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{directions\+\_\+}{directions\_}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ Pilot\+Base\+::directions\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+indicates that the new control data is available \mbox{\Hypertarget{classPilotBase_adadfe76dc44fb9181239010477a9d6ba}\label{classPilotBase_adadfe76dc44fb9181239010477a9d6ba}} 
+\index{Pilot\+Base@{Pilot\+Base}!mu2\+\_\+@{mu2\+\_\+}}
+\index{mu2\+\_\+@{mu2\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{mu2\+\_\+}{mu2\_}}
+{\footnotesize\ttfamily std\+::mutex Pilot\+Base\+::mu2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+controls access to the data variables \mbox{\Hypertarget{classPilotBase_af41263e699653e27b79d11ae04dd5380}\label{classPilotBase_af41263e699653e27b79d11ae04dd5380}} 
+\index{Pilot\+Base@{Pilot\+Base}!mu\+\_\+@{mu\+\_\+}}
+\index{mu\+\_\+@{mu\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{mu\+\_\+}{mu\_}}
+{\footnotesize\ttfamily std\+::mutex Pilot\+Base\+::mu\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+controls access to the control variables \mbox{\Hypertarget{classPilotBase_ae89933ad32a4633b89dad48ef07494b6}\label{classPilotBase_ae89933ad32a4633b89dad48ef07494b6}} 
+\index{Pilot\+Base@{Pilot\+Base}!rbs\+From\+Friendly\+\_\+@{rbs\+From\+Friendly\+\_\+}}
+\index{rbs\+From\+Friendly\+\_\+@{rbs\+From\+Friendly\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{rbs\+From\+Friendly\+\_\+}{rbsFromFriendly\_}}
+{\footnotesize\ttfamily std\+::vector$<$Range\+Bearing\+Stamped$>$ Pilot\+Base\+::rbs\+From\+Friendly\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+range and bearing of bogies from friendly \mbox{\Hypertarget{classPilotBase_aa6d7282efaf823724de187522476156e}\label{classPilotBase_aa6d7282efaf823724de187522476156e}} 
+\index{Pilot\+Base@{Pilot\+Base}!running\+\_\+@{running\+\_\+}}
+\index{running\+\_\+@{running\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{running\+\_\+}{running\_}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ Pilot\+Base\+::running\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+indicates that the control loop is still running. \mbox{\Hypertarget{classPilotBase_a3c299fe0fc0d088a0b8aa7e23e687a6e}\label{classPilotBase_a3c299fe0fc0d088a0b8aa7e23e687a6e}} 
+\index{Pilot\+Base@{Pilot\+Base}!rvs\+From\+Base\+\_\+@{rvs\+From\+Base\+\_\+}}
+\index{rvs\+From\+Base\+\_\+@{rvs\+From\+Base\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{rvs\+From\+Base\+\_\+}{rvsFromBase\_}}
+{\footnotesize\ttfamily std\+::vector$<$Range\+Velocity\+Stamped$>$ Pilot\+Base\+::rvs\+From\+Base\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+range and velocity of bogies from base \mbox{\Hypertarget{classPilotBase_a4a4bd780088562427f52987edb4ad483}\label{classPilotBase_a4a4bd780088562427f52987edb4ad483}} 
+\index{Pilot\+Base@{Pilot\+Base}!sim\+\_\+@{sim\+\_\+}}
+\index{sim\+\_\+@{sim\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{sim\+\_\+}{sim\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$simulator\+::\+Simulator$>$ Pilot\+Base\+::sim\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+pointer to the simulator \mbox{\Hypertarget{classPilotBase_a477c1e12ccbb744f1099b8f201993a8d}\label{classPilotBase_a477c1e12ccbb744f1099b8f201993a8d}} 
+\index{Pilot\+Base@{Pilot\+Base}!threads\+\_\+@{threads\+\_\+}}
+\index{threads\+\_\+@{threads\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{threads\+\_\+}{threads\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::thread$>$ Pilot\+Base\+::threads\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+contains all the threads created by the object \mbox{\Hypertarget{classPilotBase_ab45516b59a0299c2fff103980d36fcbb}\label{classPilotBase_ab45516b59a0299c2fff103980d36fcbb}} 
+\index{Pilot\+Base@{Pilot\+Base}!updates\+\_\+@{updates\+\_\+}}
+\index{updates\+\_\+@{updates\+\_\+}!Pilot\+Base@{Pilot\+Base}}
+\subsubsection{\texorpdfstring{updates\+\_\+}{updates\_}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ Pilot\+Base\+::updates\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+indicates that the new bogie data is available 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pilotbase_8h}{pilotbase.\+h}\item 
+pilotbase.\+cpp\end{DoxyCompactItemize}

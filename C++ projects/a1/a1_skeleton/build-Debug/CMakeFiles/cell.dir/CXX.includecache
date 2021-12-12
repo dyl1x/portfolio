@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/cell.cpp
+cell.h
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/cell.h
+random
+-
+chrono
+-
+
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/cell.h
+

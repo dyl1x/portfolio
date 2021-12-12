@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -std=c++11  -rdynamic CMakeFiles/fusionSonar.dir/sonar_fusion.cpp.o  -o fusionSonar /usr/src/gtest/libgtest.a -lpthread libmock_lib.a 

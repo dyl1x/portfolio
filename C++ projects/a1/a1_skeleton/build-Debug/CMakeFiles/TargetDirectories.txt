@@ -1,0 +1,15 @@
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/edit_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/cell.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/ranger.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/a2_skeleton_ex.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/rangerfusion.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/geometry.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/mock_lib.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/student_lib.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/fusionTests.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/rawTests.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a1_skeleton/build-Debug/test/CMakeFiles/edit_cache.dir

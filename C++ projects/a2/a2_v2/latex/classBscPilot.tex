@@ -1,0 +1,155 @@
+\hypertarget{classBscPilot}{}\section{Bsc\+Pilot Class Reference}
+\label{classBscPilot}\index{Bsc\+Pilot@{Bsc\+Pilot}}
+
+
+Inheritance diagram for Bsc\+Pilot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classBscPilot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bsc\+Pilot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classBscPilot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBscPilot_a78e73052c348955803e00bed5dfa5e4b}{Bsc\+Pilot} (std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$ sim)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBscPilot}{Bsc\+Pilot}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBscPilot_aea2409ea259e0870345c2fcbc7be8099}\label{classBscPilot_aea2409ea259e0870345c2fcbc7be8099}} 
+\hyperlink{classBscPilot_aea2409ea259e0870345c2fcbc7be8099}{$\sim$\+Bsc\+Pilot} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBscPilot}{Bsc\+Pilot} Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classBscPilot_a121a0ff2e9fc49b68d344d6785703702}{start} ()
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBscPilot_a42240aa898a2719f14d816bbe08a0f3f}{control} ()
+\begin{DoxyCompactList}\small\item\em control \end{DoxyCompactList}\item 
+void \hyperlink{classBscPilot_aa40dc622dc2c856c0a8b2e8c61970f00}{get\+Information} ()
+\begin{DoxyCompactList}\small\item\em get\+Information \end{DoxyCompactList}\item 
+void \hyperlink{classBscPilot_af73cc7f821a08574eae05be8c5806646}{drive} ()
+\begin{DoxyCompactList}\small\item\em drive \end{DoxyCompactList}\item 
+void \hyperlink{classBscPilot_a9f8ae1db08a3e84fed7c44d3bad3504b}{set\+Speeds} (geometry\+\_\+msgs\+::\+Point goal)
+\begin{DoxyCompactList}\small\item\em set\+Speeds \end{DoxyCompactList}\item 
+bool \hyperlink{classBscPilot_a62b5a5aaec0f9359afecd77da05e3811}{check\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em check\+Bounds \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBscPilot_a78e73052c348955803e00bed5dfa5e4b}\label{classBscPilot_a78e73052c348955803e00bed5dfa5e4b}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!Bsc\+Pilot@{Bsc\+Pilot}}
+\index{Bsc\+Pilot@{Bsc\+Pilot}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{Bsc\+Pilot()}{BscPilot()}}
+{\footnotesize\ttfamily Bsc\+Pilot\+::\+Bsc\+Pilot (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ simulator\+::\+Simulator $>$}]{sim }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classBscPilot}{Bsc\+Pilot}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sim} & -\/ simulation shared pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBscPilot_a62b5a5aaec0f9359afecd77da05e3811}\label{classBscPilot_a62b5a5aaec0f9359afecd77da05e3811}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!check\+Bounds@{check\+Bounds}}
+\index{check\+Bounds@{check\+Bounds}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{check\+Bounds()}{checkBounds()}}
+{\footnotesize\ttfamily bool Bsc\+Pilot\+::check\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+check\+Bounds 
+
+checks if the current location is within 100m of the end of the air space. \begin{DoxyReturn}{Returns}
+true if close to outside. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBscPilot_a42240aa898a2719f14d816bbe08a0f3f}\label{classBscPilot_a42240aa898a2719f14d816bbe08a0f3f}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!control@{control}}
+\index{control@{control}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily void Bsc\+Pilot\+::control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+control 
+
+Manage the inputs to the simulator, the linear velocity and the angular velocity 
+
+Reimplemented from \hyperlink{classPilotBase_a611edd0c1a501e1bb6722f5b62e95d6b}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classBscPilot_af73cc7f821a08574eae05be8c5806646}\label{classBscPilot_af73cc7f821a08574eae05be8c5806646}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!drive@{drive}}
+\index{drive@{drive}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{drive()}{drive()}}
+{\footnotesize\ttfamily void Bsc\+Pilot\+::drive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+drive 
+
+This function uses the information to find out where to go and then calculate how to get there. 
+
+Implements \hyperlink{classPilotBase_ad4a3db2cf9d40b5936dba864977eee95}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classBscPilot_aa40dc622dc2c856c0a8b2e8c61970f00}\label{classBscPilot_aa40dc622dc2c856c0a8b2e8c61970f00}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily void Bsc\+Pilot\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+get\+Information 
+
+Querries the simulator and update the infromation about the bogies everytime an update is available. This function will be in it own thread. 
+
+Implements \hyperlink{classPilotBase_a0c3cfd1b468842734e3706ff8dea133b}{Pilot\+Base}.
+
+\mbox{\Hypertarget{classBscPilot_a9f8ae1db08a3e84fed7c44d3bad3504b}\label{classBscPilot_a9f8ae1db08a3e84fed7c44d3bad3504b}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!set\+Speeds@{set\+Speeds}}
+\index{set\+Speeds@{set\+Speeds}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{set\+Speeds()}{setSpeeds()}}
+{\footnotesize\ttfamily void Bsc\+Pilot\+::set\+Speeds (\begin{DoxyParamCaption}\item[{geometry\+\_\+msgs\+::\+Point}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+set\+Speeds 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal} & -\/ waypoint\\
+\hline
+\end{DoxyParams}
+sets the speeds to reach the waypoint \mbox{\Hypertarget{classBscPilot_a121a0ff2e9fc49b68d344d6785703702}\label{classBscPilot_a121a0ff2e9fc49b68d344d6785703702}} 
+\index{Bsc\+Pilot@{Bsc\+Pilot}!start@{start}}
+\index{start@{start}!Bsc\+Pilot@{Bsc\+Pilot}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Bsc\+Pilot\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+start 
+
+Starts the threads and assign work tot he threads 
+
+Reimplemented from \hyperlink{classPilotBase_a3480ea2023ca1459b32b79abf8a3400d}{Pilot\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bscpilot_8h}{bscpilot.\+h}\item 
+bscpilot.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+    <include file="$(find project_setup)/launch/project_setup.launch" />
+
+    <node pkg="pfms_path_following" type="pfms_path_following-velocity_control" name="pfms_path_following" />
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find project_setup)/rviz/pfms.rviz" />
+</launch>

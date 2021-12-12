@@ -1,0 +1,105 @@
+/** \mainpage
+
+@htmlinclude manifest.html
+
+@b a3_12977866 is the assignment 3 package prepared for PfMS spring 2021 - Individual Project: Project 4; Personal assistant
+
+@section package The a3_12977866 package content
+
+The package contains a single node `a3_12977866` which is part of the `a3_12977866_ex` executable. It alos contains 3 libraries @ref Driver , @ref DataProcessing and  @ref GridProcessing
+which was included with the support package. The @ref GridProcessing library is not used in the assignemnt. Unit tests for the major functions of the libraries are included.
+
+The a3_skeleton_ex:
+- leverages @ref main.cpp to create an instance of @ref Driver class
+- The @Driver class establishes ROS callbacks and publishes to several topics. @ref main.cpp also creates a thread @ref Driver.runDriver which runs at 10 Hz (every 0.1s) and on each loop
+uses the latest data from the callbacks to process the status of the robot and publishes to the respective topics for actions.
+- At present the program can be started at 2 different modes of operation, basic and advanced. In basic mode the robot_0 will be instructed to only follow robot_1, in advanced mode, robot_0
+will move to the side of robot_1 after robot_1 has been stationary for 10 seconds.
+
+
+@section usage Starting the node
+
+You should start roscore if this node is to be run on its own<br>
+However it is recomeneded that the node is run with its dependecies to avoid unexpected issues.<br>
+<br>
+To run the node:<br>
+- run a3_depends.launch first
+- Then run a3_12977866_ex on a seperate terminal.
+
+Running the executable on a seperate terminal would allow us to see some feedback as the program is running. <br>
+```
+
+roslaunch a3_12977866 a3_depends.launch
+rosrun a3_12977866 a3_12977866_ex
+
+```
+To run the executable in advanced mode: <br>
+```
+
+rosrun a3_12977866 a3_12977866_ex _param:=adv
+
+```
+For visualization of the goal and interim poses, the saved preset from /rviz would have to be used, optionally /robot_0/following topic would have to added for visualization within Rviz.
+
+Alternatively the nodes can be started Individually or a3_launchall.launch could be used to launch the node and all its dependecies at once. However this would only run the node in basic mode.
+
+The a3_depends.launch:
+- Will start roscore
+- Launch project_setup.launch
+- Run pfms_path_following-velocity_control
+- Open Rviz with the saved preset from project_setup
+
+Image below shows the topics needed on rviz for visualization
+\image html doc/pic/rviz.png width=20%
+
+
+@section behaviour Code inner workings
+
+The a3_12977866 node with it's respective publishers and subscriber topics.
+
+\image html doc/pic/structure.png width=50%
+
+
+@subsection ros_processing Driver Library
+
+This library contain the class which handles all the subscriber and publisher resposibilities of the node. The workings of individual functions can be found in the class documentation.<br>
+
+There is a single thread in the Driver class called @ref Driver.runDriver which runs at 10Hz (every 0.1s) and on each loop.<br>
+Upon creation of the object, it will;
+Subscribe to:
+- robot_0/odom
+- robot_0/base_scan
+- robot_1/odom
+- local_map/local_map
+
+publishes to the following during operation:
+- visualisation_marker
+- robot_0/following
+- robot_0/path
+
+During operation the class will:
+ - Obtains latest information (via mutex) from the topics it has subscribed to.
+ - Publish pose arrays to robot_0/path to move to desired positions and chage orientation.
+ - Publish visualisation_marker arrays for path visualization. A green arrow indicating final goal and blue arrows showing interim poses.
+ - Will always be on the look out for robot_1 and will follow it upon detection. The laser is used for detection.
+ - If robot_1 moves out of visual, robot_0 will stop at the last the position robot_1 was last seen.
+ - In advanced mode robot_0 will move to the side of robot_1 after 10 seconds of inactivity from robot_1. Right side is prioratised assuming that robot_1 is right handed and prefers assistance
+ from the right hand side. If one side is blocked, robot_0 will move to the oposite side.
+ - A minor amount of obstacle avoidance has been implemented. robot_0 will try moving 0.5m to its side with free space and try to reach the previos goal again from the new position.
+ - At every major event, such as leader not being visible or the path being blocked, the user will be alerted through the terminal.
+
+
+@subsection data_processing DataProcessing Library
+
+This library contains the @ref DataProcessing class and geometry manipulation functions under the @ref helper namespace.
+The most important and requested functions have been unit tested and are available. Each unit test will contain a breif explaining the expected functionality and purpose of the tests.
+
+@subsection grid_processing GridProcessing Library
+
+This library was provided with support package and have not been utilized, yet unremoved for future developments.
+The @ref GridProcessing is extensively documented, supplied are also unit tests which confirm the behaviour of the library.
+To compile uints test `catkin make tests` and you running tests via `rosrun a3_skeleton a3_skeleton_grid_processing_test`
+
+
+*/
+

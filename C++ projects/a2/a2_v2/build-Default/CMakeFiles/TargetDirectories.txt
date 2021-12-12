@@ -1,0 +1,13 @@
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/edit_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/a2_v2.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/nav.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/CMakeFiles/control.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/rebuild_cache.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/posetest.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/student_lib.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/associationtest.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/test.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/bogieextrapolationtest.dir
+/home/chamath/git/pfms-2021s-dyl1x/scratch/assignments/a2/a2_v2/build-Default/test/CMakeFiles/edit_cache.dir

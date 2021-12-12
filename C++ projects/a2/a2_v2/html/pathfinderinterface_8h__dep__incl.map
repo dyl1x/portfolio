@@ -1,0 +1,8 @@
+<map id="pathfinderinterface.h" name="pathfinderinterface.h">
+<area shape="rect" id="node2" href="$pathfinderbase_8h.html" title="Base class for PathFinder classes. " alt="" coords="68,80,187,107"/>
+<area shape="rect" id="node3" href="$advpathfinder_8h.html" title="Child class of PathFinder. " alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node6" href="$bscpathfinder_8h.html" title="Child class of PathFinder. " alt="" coords="140,155,251,181"/>
+<area shape="rect" id="node4" href="$advpilot_8h.html" title="Child class of Pilot for advanced mode. " alt="" coords="29,229,108,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Main entry point for assignment 2. " alt="" coords="90,304,165,331"/>
+<area shape="rect" id="node7" href="$bscpilot_8h.html" title="Child class of Pilot for Basic mode. " alt="" coords="148,229,227,256"/>
+</map>
